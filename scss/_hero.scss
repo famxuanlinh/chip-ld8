@@ -1,0 +1,108 @@
+@use "mixin" as *;
+
+.hero {
+  background: linear-gradient(120deg, #fff9e0 33.1%, #ffe8a0 86.51%);
+  width: 100%;
+  overflow: hidden;
+  margin-top: -80px;
+
+  @include maxw(768) {
+    background-size: cover;
+    background-position: bottom;
+    padding-top: 80px;
+  }
+  &-container {
+    display: flex;
+    align-items: center;
+
+    @include maxw(768) {
+      flex-direction: column;
+    }
+  }
+  &-content {
+    flex: 1 1 0%;
+    max-width: 653px;
+    width: 100%;
+    @include minw(1180) {
+      padding: 40px 0;
+    }
+
+    &-sub-title {
+      color: #4ab749;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+
+      @include maxw(1180) {
+        color: #4ab749;
+        text-align: justify;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+    &-title {
+      color: #ff9914;
+      font-size: 62px;
+      font-style: normal;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 32px;
+      line-height: normal;
+
+      @include maxw(1180) {
+        color: #ff9914;
+        text-align: justify;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 42px; /* 131.25% */
+        margin-top: 12px;
+        margin-bottom: 16px;
+      }
+    }
+
+    &-desc {
+      color: #272b30;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 36px; /* 163.636% */
+      margin-bottom: 48px;
+
+      @include maxw(1180) {
+        color: #272b30;
+        text-align: justify;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26px; /* 162.5% */
+        margin-bottom: 28px;
+      }
+    }
+
+    &-btn {
+      margin-top: 42px;
+      @include maxw(1180) {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  &-image {
+    flex: 1 1 0%;
+    aspect-ratio: 1/1;
+    margin-top: 12px;
+    margin-bottom: 0;
+
+    @include minw(768) {
+      margin-left: -60px;
+      margin-top: 164px;
+      margin-bottom: 0;
+    }
+  }
+}

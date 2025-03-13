@@ -1,0 +1,114 @@
+@use "mixin" as *;
+@use "common";
+
+.celebrity {
+  position: relative;
+
+  @include maxw(768) {
+    margin: 24px 0;
+  }
+
+  &-content {
+    margin: 40px 0 24px 0;
+    @include maxw(768) {
+      margin: 40px 16px 24px 0;
+    }
+    &-arrows {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 24px;
+
+      & > :not(:last-child) {
+        margin-right: 15px;
+      }
+      @include maxw(768) {
+      }
+    }
+  }
+
+  &-container {
+    @extend .container;
+    padding: 100px 0;
+    @include maxw(768) {
+      padding: 0 0 0 16px !important;
+    }
+  }
+  &-title {
+    @extend .commit-title;
+    max-width: 1018px;
+    width: 100%;
+    margin-bottom: 48px;
+    @include maxw(768) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &-card {
+    border-radius: 20px;
+    background: linear-gradient(
+      86deg,
+      #ffef88 0.39%,
+      #94d35b 25.7%,
+      #47be3a 99.66%
+    );
+
+    display: flex;
+    align-items: center;
+
+    @include maxw(1080) {
+      flex-direction: column-reverse;
+    }
+
+    &-img {
+      flex: 1 1 0%;
+      object-fit: contain;
+    }
+    &-content {
+      flex: 1 1 0%;
+      padding: 24px 48px;
+    }
+
+    &-desc {
+      color: #fff;
+      text-align: center;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32px; /* 160% */
+
+      @include maxw(768) {
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 133.333% */
+      }
+    }
+    &-desc-sub {
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 150% */
+
+      @include maxw(768) {
+        color: #fff;
+        text-align: center;
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 150% */
+      }
+    }
+  }
+
+  &-dots {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

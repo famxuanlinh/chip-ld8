@@ -1,0 +1,312 @@
+@use "celebrity";
+@use "chip-chip";
+@use "commit";
+@use "common";
+@use "hero";
+@use "mixin" as *;
+@use "online-class";
+@use "program";
+@use "register";
+@use "reset";
+@use "student";
+@use "teacher";
+@use "advisory";
+@use "income";
+@use "about-us";
+@use "candidate";
+
+@font-face {
+  font-family: "SF Pro Rounded";
+  src: url("../fonts/SF-Pro-Rounded-Regular.otf") format("opentype");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Rounded";
+  src: url("../fonts/SF-Pro-Rounded-Medium.otf") format("opentype");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Rounded";
+  src: url("../fonts/SF-Pro-Rounded-Semibold.otf") format("opentype");
+  font-weight: 600; /* Semibold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Rounded";
+  src: url("../fonts/SF-Pro-Rounded-Bold.otf") format("opentype");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+// @font-face {
+//   font-family: "SF Pro Rounded";
+//   src: url("../fonts/SF-Pro-Rounded-Heavy.otf") format("opentype");
+//   font-weight: 800; /* Heavy */
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "SF Pro Rounded";
+//   src: url("../fonts/SF-Pro-Rounded-Black.otf") format("opentype");
+//   font-weight: 900; /* Black */
+//   font-style: normal;
+// }
+
+html {
+  scroll-behavior: smooth;
+  font-family: "SF Pro Rounded", sans-serif;
+}
+
+.header {
+  z-index: 1000;
+
+  &-logo {
+    @include maxw(768) {
+      width: 131px;
+    }
+  }
+  &-item {
+    &-mobile {
+      font-size: 16px;
+      font-weight: 600;
+      color: #272b30;
+      text-decoration: none;
+      text-decoration: inherit;
+
+      &:focus {
+        color: #272b30;
+        text-decoration: none;
+        text-decoration: inherit;
+      }
+    }
+  }
+}
+
+.no-scroll {
+  overflow: hidden !important; /* Prevent scrolling */
+}
+
+#header > div > nav > div > ul > li > a {
+  color: #272b30;
+  text-transform: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 133.333% */
+}
+
+.header-new {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+
+  &.scrolled {
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg:not(#other-icon) > path {
+  fill: currentColor;
+}
+
+.uk-modal-close-default svg {
+  color: white; /* Changes the color of the SVG */
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  @include min-md {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @include maxw(768) {
+    height: 64px;
+  }
+
+  &-logo {
+    height: 60px;
+    @include maxw(768) {
+      height: 48px;
+    }
+  }
+
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 24px;
+    gap: 4px;
+    width: fit-content;
+    height: 48px;
+    color: white;
+    background: radial-gradient(100% 100% at 0% 0%, #ffc007 0%, #ff5723 100%);
+    border-radius: 1000px;
+    cursor: pointer;
+    font-size: 20px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      color: #f7f7f7;
+    }
+
+    @include maxw(768) {
+      font-size: 16px;
+    }
+  }
+}
+
+.button-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 52px;
+  gap: 4px;
+  width: fit-content;
+  height: 72px;
+  color: white;
+  background: #4ab749;
+  border-radius: 1000px;
+  cursor: pointer;
+  font-size: 20px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  text-decoration: none;
+  animation: crescendo 1s alternate infinite ease-in;
+
+  @include maxw(768) {
+    font-size: 16px;
+  }
+
+  &-big {
+    height: 86px;
+    padding: 0 61px;
+    font-size: 23.82px;
+    font-weight: 700;
+    line-height: 34.54px;
+
+    @include maxw(768) {
+      height: 52px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 23.2px;
+      color: #ffffff;
+    }
+  }
+
+  &:hover {
+    color: #c8f2ff;
+    text-decoration: none;
+  }
+
+  @include max-md {
+    // padding: 10px 20px;
+    height: 52px;
+    width: 100%;
+  }
+}
+
+@keyframes crescendo {
+  /*   0%   {transform: scale(.8);} */
+  100% {
+    transform: scale(1.03);
+  }
+}
+
+.icon-max-md {
+  z-index: 10;
+  @include max-lg() {
+    display: none;
+  }
+}
+
+.bg-pattern {
+  background-image: url(/public/bg.png);
+  background-repeat: repeat-y;
+  width: 100%;
+  background-size: contain;
+}
+
+// footer
+.footer__list-link > li > a {
+  color: #565656;
+  font-size: 0.875rem;
+}
+
+#footer .uk-background-muted {
+  background-color: #f7f7f7;
+}
+
+.footer__title {
+  color: #171717;
+  font-size: 0.875rem;
+}
+
+.footer__title--fz-24 {
+  font-size: 15.75px;
+}
+
+@media screen and (min-width: 375px) {
+  .footer__title--fz-24 {
+    font-size: calc(15.75px + 5.25 * ((100vw - 375px) / 825));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__title--fz-24 {
+    font-size: 21px;
+  }
+}
+
+.is-max-md {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include min-md {
+    display: none;
+  }
+}
+
+.uk-child-width-1-1-5 > * {
+  @include maxw(640) {
+    width: 75%;
+  }
+}

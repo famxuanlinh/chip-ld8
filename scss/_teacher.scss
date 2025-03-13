@@ -1,0 +1,170 @@
+@use "mixin" as *;
+@use "common";
+
+.teacher {
+  padding: 60px 0 51px 0;
+  background-image: url(/public/c4-bg.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  overflow: hidden;
+
+  @include maxw(780) {
+    padding: 40px 0 83px 0;
+
+    background-image: url(/public/c4-bg-mobile.svg);
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  &-title {
+    color: #ff9914;
+    text-align: center;
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 160% */
+
+    @include maxw(1180) {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 48px; /* 150% */
+    }
+
+    &-line {
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 320px;
+
+      @include maxw(1180) {
+        position: absolute;
+        top: 32px;
+        left: 0;
+        width: 190px;
+      }
+    }
+  }
+
+  &-desc {
+    color: #5f8d52;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 133.333% */
+    margin: 16px 0 26px 0;
+    text-align: center;
+
+    @include maxw(1180) {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 150% */
+      text-align: center;
+      padding: 0 16px;
+    }
+  }
+
+  &-img {
+    width: 735px;
+    padding: 0 !important;
+    @include maxw(1180) {
+      padding: 0;
+    }
+  }
+
+  &-break {
+    @include minw(1180) {
+      display: none;
+    }
+  }
+  &-body {
+    @extend .container;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 16px;
+
+    @include maxw(780) {
+      display: block;
+      gap: 16px;
+    }
+
+    & > :not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &-img {
+    padding: 32px 0 36px 0;
+    @include maxw(1180) {
+      padding: 16px 0;
+    }
+  }
+  &-card {
+    height: fit-content;
+    width: 100%;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: #64d563;
+
+    @include maxw(780) {
+      padding: 16px;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    & > :not(:last-child) {
+      margin-bottom: 8px;
+
+      @include maxw(780) {
+        margin-bottom: 0px;
+      }
+    }
+
+    &-icon {
+      width: 80px;
+      height: 80px;
+      @include maxw(780) {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    &-title {
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 48px; /* 100% */
+
+      @include maxw(1180) {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px; /* 150% */
+      }
+    }
+
+    &-desc {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 133.333% */
+
+      @include maxw(1180) {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 150% */
+      }
+    }
+  }
+}

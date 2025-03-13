@@ -1,0 +1,103 @@
+@use "mixin" as *;
+@use "common";
+
+.advisory {
+  box-sizing: border-box;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 100;
+  width: 88px;
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  padding: 8px 0;
+  border-radius: 24px 0 0 24px;
+
+  @include maxw(768) {
+    width: 60px;
+    bottom: 40px;
+    right: 16px;
+    top: auto;
+    border-radius: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &::before {
+    content: "";
+    z-index: -1;
+    width: 80px;
+    height: 90px;
+    background: url("/public/icon/chu-bat-dau.png") no-repeat;
+    background-size: contain;
+    right: 4px;
+    top: -58px;
+    position: absolute;
+
+    @include maxw(768) {
+      display: none;
+    }
+  }
+  &-item {
+    display: block;
+    padding: 16px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-size: 13px;
+    font-weight: 400;
+    color: #555;
+    width: 100%;
+    border: 0 none;
+    background: none;
+
+    @include maxw(768) {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &.phone {
+      & > img {
+        width: 40px;
+        height: 40px;
+      }
+      @include maxw(768) {
+        display: none;
+      }
+    }
+
+    & > img {
+      width: 46px;
+      height: 46px;
+      -o-object-fit: contain;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 2px;
+
+      @include maxw(768) {
+        margin: 0;
+      }
+    }
+
+    & > span {
+      font-size: 13px;
+      font-weight: 400;
+      color: #555;
+      font-weight: 700;
+
+      @include maxw(768) {
+        display: none;
+      }
+    }
+  }
+}
