@@ -22,7 +22,7 @@
         style="flex-direction: column; position: relative"
       >
         <div class="uk-position-bottom-center !w-full">
-          <a href="#modal-try" uk-toggle class="flex-center w-full">
+          <a href="#modal-center" uk-toggle class="flex-center w-full">
             <img
               class="register-to-try-destop"
               src="public/candidates/banner-desktop.png"
@@ -659,7 +659,7 @@
       >
         <div class="flex justify-between">
           <div
-            class="text-center w-full text-[22px] md:text-[44px] text-[#4AB749]"
+            class="text-center w-full font-extrabold text-[22px] md:text-[44px] text-[#4AB749]"
           >
             Giới thiệu học sinh - Nhận hoa hồng hấp dẫn
           </div>
@@ -677,7 +677,7 @@
             alt="register"
             class="register-img modal"
           />
-          <div class="register-content" style="padding: 0">
+          <div class="register-content .modal" style="padding: 0">
             <img
               src="public/candidates/popup-discount.png"
               alt="register"
@@ -736,136 +736,6 @@
                 <button
                   class="button-primary"
                   style="height: 100%; width: 100%; border-color: transparent"
-                >
-                  Đăng ký ngay
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal trải nhgiệm miễn phí -->
-    <div id="modal-try" class="uk-flex-top" style="z-index: 99999" uk-modal>
-      <div
-        style="width: auto"
-        class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical register-modal"
-      >
-        <div class="flex">
-          <div class="register-title modal">
-            <div class="flex-center">
-              <div style="position: relative; text-align: left">
-                Tặng suất trải nghiệm và nhận siêu ưu đãi
-                <img
-                  class="register-title-line-modal"
-                  src="public/c2-line-orange.svg"
-                  alt="line"
-                />
-              </div>
-            </div>
-            <p style="width: 32px; flex: none"></p>
-          </div>
-          <button
-            class="uk-modal-close-default"
-            type="button"
-            style="top: 32px; right: 32px"
-            uk-close
-          ></button>
-        </div>
-
-        <div class="register">
-          <img
-            src="public/c10-img.png"
-            alt="register"
-            class="register-img modal"
-          />
-          <div class="register-content" style="padding: 0">
-            <form class="text-left register-form">
-              <div>
-                <label for="name" class="register-form-label"
-                  >Tên của con <span style="color: red">*</span></label
-                >
-                <input
-                  class="uk-input register-form-input"
-                  type="text"
-                  placeholder="Nhập tên của con"
-                  aria-label="Input"
-                  name="name"
-                  id="name"
-                />
-              </div>
-              <div>
-                <label for="name" class="register-form-label"
-                  >Năm sinh <span style="color: red">*</span></label
-                >
-                <div
-                  uk-form-custom="target: > * > span:first-child"
-                  style="
-                    border-radius: 999px;
-                    width: 100%;
-                    background-color: #fff;
-                  "
-                >
-                  <select
-                    class="w-full"
-                    aria-label="Custom controls"
-                    style="color: #535557; height: 44px; border-radius: 9999px"
-                  >
-                    <option value="">Chọn năm sinh</option>
-                    <option value="2010">2010</option>
-                    <option value="2011">2011</option>
-                    <option value="2012">2012</option>
-                    <option value="2013">2013</option>
-                    <option value="2014">2014</option>
-                    <option value="2015">2015</option>
-                    <option value="2016">2016</option>
-                    <option value="2017">2017</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2019">2020</option>
-                    <option value="2019">2021</option>
-                  </select>
-                  <button
-                    class="register-form-select"
-                    type="button"
-                    tabindex="-1"
-                    style="border-radius: 999px; text-transform: none"
-                  >
-                    <span class="uk-margin-remove"></span>
-                    <span uk-icon="icon: chevron-down"></span>
-                  </button>
-                </div>
-              </div>
-              <div>
-                <label for="name" class="register-form-label"
-                  >Số điện thoại <span style="color: red">*</span></label
-                >
-                <input
-                  class="uk-input register-form-input"
-                  type="text"
-                  placeholder="Số điện thoại của phụ huynh"
-                  aria-label="Input"
-                  name="name"
-                  id="name"
-                />
-              </div>
-              <div
-                class="uk-flex uk-flex-center"
-                style="margin-top: 12px; height: 60px"
-              >
-                <button
-                  type="button"
-                  uk-toggle="target: #modal-success"
-                  class="button-primary"
-                  style="
-                    height: 100%;
-                    width: 100%;
-                    background: #f57032;
-                    color: #fff;
-                    border-color: transparent;
-                    margin-bottom: 8px;
-                  "
                 >
                   Đăng ký ngay
                 </button>
