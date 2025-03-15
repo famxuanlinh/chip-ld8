@@ -26,7 +26,11 @@
   }
 
   &-modal {
-    background: linear-gradient(180deg, #54c033 0%, #72e350 100%);
+    background-image: url(/public/candidates/popup-bg.png);
+
+    background-color: #e3fcdc;
+    background-position: bottom left;
+    background-repeat: no-repeat;
     max-width: 736px;
     width: 100%;
     border-radius: 24px;
@@ -151,7 +155,7 @@
     border-bottom-left-radius: 8px;
     flex: none;
     width: 100%;
-    max-width: 530px;
+    max-width: 670px;
 
     @include max-lg {
       width: 100%;
@@ -160,16 +164,26 @@
       object-fit: cover;
     }
 
+    &-discount {
+      max-height: 60px;
+      padding: 4px 10px 0;
+      @include min-lg {
+        display: none;
+      }
+    }
+
     &.modal {
+      width: 50%;
       @include min-lg {
         margin-left: -30px;
-        margin-bottom: -30px;
+        margin-bottom: -40px;
       }
       @include max-lg {
         display: none;
       }
     }
   }
+
   &-form {
     background-color: #fff;
     border-radius: 30px;

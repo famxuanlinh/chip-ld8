@@ -2,7 +2,7 @@
 @use "common";
 
 .chip {
-  background-image: url(/public/candidates/3-bg.png);
+  background-image: url(/public/candidates/3-bg.webp);
   width: 100%;
   background-size: cover;
   width: 100%;
@@ -16,6 +16,18 @@
     background-position: left;
     padding-top: 50px;
     padding-bottom: 70px;
+  }
+
+  &-image1 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+
+    @include maxw(1180) {
+      display: none;
+    }
   }
 
   &-title {
@@ -67,6 +79,7 @@
       justify-content: center;
       align-items: center;
       gap: 12px;
+      max-width: 100%;
     }
 
     &-icon {

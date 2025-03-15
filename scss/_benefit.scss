@@ -10,7 +10,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 80px 0 86px 0;
+  padding: 80px 0 0 0;
 
   @include maxw(780) {
     padding: 50px 0;
@@ -83,7 +83,8 @@
 
   &-image {
     @include minw(1080) {
-      min-width: 538px !important;
+      max-width: 538px !important;
+      transform: scale(1.2);
     }
     @include minw(780) {
       min-width: 380px;
@@ -94,6 +95,7 @@
     gap: 44px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 80px;
 
     @include maxw(780) {
       gap: 24px;
