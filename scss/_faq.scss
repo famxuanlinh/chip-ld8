@@ -1,11 +1,7 @@
 @use "mixin" as *;
 @use "common";
 
-.candidate {
-  background: url("/public/candidates/6-bg.webp");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
+.faq {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -155,4 +151,46 @@
       }
     }
   }
+}
+
+.uk-accordion-title {
+  color: #272b30;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  @include maxw(1180) {
+    color: #272b30;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 133.333% */
+  }
+
+  & > p {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.uk-accordion-content {
+  color: #57595c;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+  margin-top: 16px;
+
+  @include maxw(1180) {
+    color: #57595c;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+  }
+}
+
+.uk-accordion > li {
+  padding-bottom: 20px;
 }

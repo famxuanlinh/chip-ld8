@@ -34,7 +34,7 @@
     font-size: 54px;
     font-style: normal;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 64px;
     line-height: 100%;
 
     @include maxw(780) {
@@ -44,6 +44,7 @@
       font-style: normal;
       font-weight: 700;
       line-height: 100%;
+      padding: 0 24px;
     }
   }
 
@@ -54,15 +55,13 @@
     grid-template-columns: auto auto auto auto;
     gap: 30px;
 
-    @include maxw(780) {
-      display: block;
-      gap: 54px;
+    @include maxw(1120) {
+      grid-template-columns: auto auto;
     }
 
-    & > :not(:last-child) {
-      @include maxw(780) {
-        margin-bottom: 16px;
-      }
+    @include maxw(780) {
+      grid-template-columns: auto;
+      gap: 22px;
     }
   }
 

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/app.css" />
   </head>
   <body style="position: relative">
-    <div id="register-to-try" class="register-to-try hide">
+    <!-- <div id="register-to-try" class="register-to-try hide">
       <div
         class="flex-center w-full"
         style="flex-direction: column; position: relative"
@@ -25,7 +25,7 @@
           <a href="#modal-try" uk-toggle class="flex-center">
             <img
               class="register-to-try-destop"
-              src="public/banner-destop.png"
+              src="public/candidates/banner-desktop.png"
               alt=""
             />
             <img
@@ -35,13 +35,13 @@
                 -webkit-filter: drop-shadow(1px 1px 1px #aaaaaa);
                 filter: drop-shadow(0 0 0.55rem #c6c6c6);
               "
-              src="public/banner-mobile.png"
+              src="public/candidates/banner-mobile.png"
               alt=""
             />
           </a>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="advisory">
       <a
         class="advisory-item zalo"
@@ -71,28 +71,13 @@
               <img class="header-logo" src="/public/logo.svg" alt=""
             /></a>
           </div>
-          <div class="uk-visible@l">
-            <ul class="uk-navbar-nav">
-              <li><a href="/giao-vien.html">Giáo viên</a></li>
-              <li><a href="/chuong-trinh-hoc.html">Chương trình học</a></li>
-              <li><a href="/ve-chip-chip.html">Về Chip Chip</a></li>
-              <li><a href="/tro-giup.html">Trợ giúp</a></li>
-              <li><a href="/blocg.html">Blog</a></li>
-              <li><a href="/lien-he.html">Liên hệ</a></li>
+          <div class="uk-visible@l flex items-center">
+            <ul class="uk-navbar-nav !gap-4">
               <li class="flex-center">
-                <button
-                  style="
-                    color: #272b30;
-                    border: 1px solid #272b30;
-                    border-radius: 100px;
-                    padding: 10px 24px;
-                    background-color: transparent;
-                    font-weight: 600;
-                    font-size: 18px;
-                  "
-                >
-                  Đăng nhập
-                </button>
+                <button class="header-button bg-[#4AB749]">Đăng ký</button>
+              </li>
+              <li class="flex-center">
+                <button class="header-button bg-[#FF9914]">Đăng nhập</button>
               </li>
             </ul>
           </div>
@@ -191,7 +176,7 @@
     <!-- Main banner -->
     <div class="hero">
       <div class="container">
-        <div class="hero-container mt-20">
+        <div class="hero-container mt-8 md:mt-20">
           <div class="hero-content">
             <div class="hero-content-sub-title">Đại sứ giáo dục Chip Chip</div>
             <div class="hero-content-title">
@@ -199,13 +184,14 @@
               Rinh thu nhập khủng
             </div>
             <p class="hero-content-desc">
-              Học 1 kèm 1 với giáo viên nước ngoài hạng A
+              Tham gia cộng đồng với hơn 3000 Đại sứ của tiếng Anh trực tuyến
+              Chip Chip, thu nhập 10 - 30 triệu/tháng
             </p>
             <div class="hero-content-btn">
               <a
                 href="#modal-center"
                 uk-toggle
-                class="button-primary button-primary-big"
+                class="button-primary button-primary-big max-sm:!p-0"
                 >Đăng ký trở thành đại sứ ngay
               </a>
             </div>
@@ -274,8 +260,8 @@
     <!-- Quyền lợi -->
     <div class="chip space-y-4">
       <div class="chip-title">Quyền lợi hấp dẫn</div>
-      <div class="chip-body">
-        <div class="space-y-9 chip-body-left">
+      <div class="chip-body max-lg:space-y-5">
+        <div class="space-y-5 lg:space-y-9 chip-body-left">
           <div class="chip-card bg-[#D5F6D3]">
             <img
               class="chip-card-icon"
@@ -304,7 +290,7 @@
             <p class="chip-card-title">Hỗ trợ chuyên nghiệp</p>
           </div>
         </div>
-        <div class="space-y-9 chip-body-right">
+        <div class="space-y-5 lg:space-y-9 chip-body-right">
           <div class="chip-card bg-[#E5DBFA]">
             <img
               class="chip-card-icon"
@@ -331,7 +317,7 @@
           </div>
         </div>
       </div>
-      <div class="hero-content-btn flex justify-center mt-9">
+      <div class="hero-content-btn flex justify-center !mt-9 max-md:!mx-6">
         <a
           href="#modal-center"
           uk-toggle
@@ -341,53 +327,29 @@
       </div>
     </div>
 
-    <!-- Lớp học trực tuyến -->
-    <div class="online-class space-y-4">
-      <div class="online-class-title">
-        <div class="flex-center">
-          <div style="position: relative">
-            Lớp học trực tuyến <br class="online-class-break" />
-            tại Chip Chip có gì?
-            <img
-              class="online-class-title-line"
-              src="public/c2-line.svg"
-              alt="line"
-            />
+    <!-- Đừng bỏ qua cơ hội nếu bạn là -->
+    <div class="benefit">
+      <div class="benefit-title">Đừng bỏ qua cơ hội nếu bạn là</div>
+      <div class="benefit-body">
+        <img
+          class="benefit-image"
+          src="public/candidates/4.png"
+          alt="teacher"
+        />
+        <div class="benefit-content">
+          <div class="benefit-card bg-[#FDDCCC]">
+            <div class="benefit-card-arrow bg-[#FDDCCC]"></div>
+            Giáo viên, người làm trong lĩnh vực giáo dục
+          </div>
+          <div class="benefit-card bg-[#D5F6D3]">
+            <div class="benefit-card-arrow bg-[#D5F6D3]"></div>
+            Người kinh doanh online, KOLs, KOCs, reviewer
+          </div>
+          <div class="benefit-card bg-[#E5DBFA]">
+            <div class="benefit-card-arrow bg-[#E5DBFA]"></div>
+            Nhân viên văn phòng, mẹ bỉm sữa, người tìm kiếm công việc linh hoạt
           </div>
         </div>
-      </div>
-      <img class="online-class-img" src="public/c3-bg.png" alt="bg" />
-      <div class="online-class-body">
-        <div class="online-class-card first">
-          <p class="online-class-card-number">01</p>
-          <p class="online-class-card-title">Trước buổi học</p>
-          <p class="online-class-card-desc">
-            Trước buổi học Xem nội dung kiến thức trước khi buổi học diễn ra
-          </p>
-        </div>
-        <div class="online-class-card second">
-          <p class="online-class-card-number">02</p>
-          <p class="online-class-card-title">Trong buổi học</p>
-          <p class="online-class-card-desc">
-            Học online 1 kèm 1 với giáo viên nước ngoài hạng A trong lớp
-          </p>
-        </div>
-        <div class="online-class-card third">
-          <p class="online-class-card-number">03</p>
-          <p class="online-class-card-title">Sau buổi học</p>
-          <p class="online-class-card-desc">
-            Luyện tập tiếng Anh dưới dạng trò chơi tương tác sinh động
-          </p>
-        </div>
-      </div>
-      <div class="hero-content-btn flex-center">
-        <a
-          href="#modal-center"
-          uk-toggle
-          style="width: fit-content"
-          class="button-primary button-primary-big"
-          >Đăng ký học thử
-        </a>
       </div>
     </div>
 
@@ -459,6 +421,14 @@
             hồng cho bạn theo chính sách.
           </p>
         </div>
+      </div>
+      <div class="hero-content-btn flex justify-center !mt-9 max-md:!mx-6">
+        <a
+          href="#modal-center"
+          uk-toggle
+          class="button-primary button-primary-big"
+          >Đăng ký ngay
+        </a>
       </div>
     </div>
 
@@ -549,534 +519,104 @@
       </div>
     </div>
 
-    <!-- Giáo viên hạng A -->
-    <div class="teacher">
-      <div class="teacher-title">
-        <div class="flex-center">
-          <div style="position: relative">
-            Giáo viên hạng A <br class="teacher-break" />
-            đồng hành xuyên suốt
-            <img
-              class="teacher-title-line"
-              src="public/c2-line.svg"
-              alt="line"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="flex-justify-center teacher-desc">
-        <p class="" style="max-width: 700px">
-          Với hơn 610 giáo viên nước ngoài được tuyển chọn qua quy trình tuyển
-          chọn nghiêm ngặt. Tất cả đều có chứng chỉ giảng dạy quốc tế như TESOL,
-          TOEFL, CELTA... với ít nhất hơn 2 năm kinh nghiệm giảng dạy trực tuyến
-          cho trẻ em.
-        </p>
-      </div>
-      <div class="flex-center">
-        <img class="teacher-img" src="public/c3-teacher.png" alt="teacher" />
-      </div>
-      <div class="teacher-body">
-        <div class="teacher-card">
-          <img
-            class="teacher-card-icon"
-            src="public/icon/c3-gradunation-cap.png"
-            alt="teacher"
-          />
-
-          <p class="teacher-card-title">100%</p>
-          <p class="teacher-card-desc">Chứng chỉ Quốc tế</p>
-        </div>
-        <div class="teacher-card">
-          <img
-            class="teacher-card-icon"
-            src="public/icon/c3-magnifying.png"
-            alt="teacher"
-          />
-
-          <p class="teacher-card-title">6</p>
-          <p class="teacher-card-desc">bước tuyển dụng</p>
-        </div>
-        <div class="teacher-card">
-          <img
-            class="teacher-card-icon"
-            src="public/icon/c3-crown.png"
-            alt="teacher"
-          />
-
-          <p class="teacher-card-title">5%</p>
-          <p class="teacher-card-desc">ứng viên được chọn</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Chương trình chuẩn quốc tế -->
-    <div class="program">
-      <div class="program-title">
-        <div class="flex-center">
-          <div style="position: relative">
-            Chương trình chuẩn Quốc tế
-            <br />
-            cho trẻ em từ 4 - 12 tuổi
-            <img
-              class="program-title-line"
-              src="public/c2-line.svg"
-              alt="line"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="flex-center">
-        <img class="program-img" src="public/c6-static.png" alt="program" />
-        <!-- <img
-          class="program-img-mobile"
-          src="public/c6-level1.svg"
-          alt="program"
-        /> -->
-      </div>
-
-      <div class="uk-switcher-container">
-        <!-- Switcher navigation (must appear first in the DOM for UIKit to work) -->
-        <ul class="uk-subnav uk-subnav-pill program-level" uk-switcher>
-          <li class=""><a href="#">Level 0-2</a></li>
-          <li class=""><a href="#">Level 3-4</a></li>
-          <li class=""><a href="#">Level 5-6</a></li>
-        </ul>
-
-        <!-- Content block -->
-        <div class="uk-switcher uk-margin">
-          <div>
-            <img
-              class="program-img-mobile"
-              src="public/c6-level1.svg"
-              alt="program"
-            />
-          </div>
-          <div>
-            <img
-              class="program-img-mobile"
-              src="public/c6-level2.svg"
-              alt="program"
-            />
-          </div>
-          <div>
-            <img
-              class="program-img-mobile"
-              src="public/c6-level3.svg"
-              alt="program"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Chip chip cam kết -->
-    <div class="commit-wrapper">
-      <div>
-        <div class="platform-title">
-          <div class="flex-center">
-            <div style="position: relative">
-              Chip Chip cam kết
+    <!-- Các câu hỏi thường gặp -->
+    <div class="faq container">
+      <div class="faq-title">Các câu hỏi thường gặp</div>
+      <ul uk-accordion="multiple: true" class="divide-y divide-dashed">
+        <li class="uk-open">
+          <a class="uk-accordion-title" href>
+            <p class="flex items-start">
               <img
-                class="platform-title-line"
-                src="public/c2-line-orange-normal.svg"
+                class="max-md:size-5 max-md:mt-0.5 mr-2 md:mr-3"
+                src="public/icon/7.1.svg"
                 alt="line"
               />
-            </div>
-          </div>
-        </div>
-        <div class="flex-justify-center platform-desc">
-          <p class="" style="max-width: 700px">
-            Chip Chip luôn đặt ra tiêu chuẩn phục vụ cao nhất đối với học sinh
-            và phụ huynh
-          </p>
-        </div>
-        <div class="container commit">
-          <img src="public/c7-img.png" alt="commit" class="commit-image" />
-          <div style="flex: 1 1 0%">
-            <div class="commit-content">
-              <div class="commit-content-item">
-                <img
-                  src="public/icon/c7-commit.png"
-                  alt="1"
-                  class="commit-content-icon"
-                />
-                <div class="commit-content-desc">
-                  Cam kết đầu ra bằng hợp đồng đào tạo có giá trị pháp lý
-                </div>
-              </div>
-              <div class="commit-content-item">
-                <img
-                  src="public/icon/c7-teacher.png"
-                  alt="1"
-                  class="commit-content-icon"
-                />
-                <div class="commit-content-desc">
-                  Con luôn được theo sát, chăm sóc bởi 1 giáo vụ người Việt đồng
-                  hành trong suốt quá trình học
-                </div>
-              </div>
-              <div class="commit-content-item">
-                <img
-                  src="public/icon/c7-phone.png"
-                  alt="1"
-                  class="commit-content-icon"
-                />
-                <div class="commit-content-desc">
-                  100% các lớp học đều được hỗ trợ kỹ thuật
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="hero-content-btn flex-center" style="margin-bottom: 70px">
-          <a
-            href="#modal-center"
-            uk-toggle
-            style="width: fit-content"
-            class="button-primary button-primary-big"
-            >Đăng ký học thử
-          </a>
-        </div>
-      </div>
-      <div class="commit-bottom">
-        <p class="commit-bottom-title">620.000+</p>
-        <p class="commit-bottom-desc">lớp học đã hoàn thành</p>
-      </div>
-    </div>
-
-    <!-- Hơn 6000 học sinh tự tin giao tiếp tiếng Anhchỉ sau 3 tháng -->
-    <div class="student">
-      <div class="">
-        <div class="student-container">
-          <div class="platform-title">
-            <div class="flex-center">
-              <div style="position: relative; color: #ff9914">
-                Tự hào giúp 7000 trẻ em <br />
-                đột phá tiếng Anh
-                <img
-                  class="platform-title-line"
-                  src="public/c2-line.svg"
-                  alt="line"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="uk-position-relative uk-visible-toggle student-content"
-            tabindex="-1"
-            uk-slider="autoplay: true; autoplay-interval: 5000"
+              1. Chương trình Đại sứ Giáo dục Chip Chip là gì?
+            </p></a
           >
-            <div
-              class="uk-slider-items uk-child-width-1-1-5 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid"
-            >
-              <div>
-                <div class="student-card">
-                  <img
-                    src="public/c8-student1.png"
-                    alt="play"
-                    class="student-card-img"
-                  />
-                  <div class="student-card-content space-y-1">
-                    <div class="student-card-name">
-                      Đặng Nguyễn Phương Khanh
-                    </div>
-                    <div class="student-card-desc">Giải nhất Talent Voice</div>
-                    <div class="student-card-desc">Đã học 116 buổi</div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="student-card">
-                  <img
-                    src="public/c8-student2.png"
-                    alt="play"
-                    class="student-card-img"
-                  />
-                  <div class="student-card-content space-y-1">
-                    <div class="student-card-name">Đặng Thiên Bảo</div>
-                    <div class="student-card-desc">
-                      Quán quân “Trạng nguyên tiếng Anh”
-                    </div>
-                    <div class="student-card-desc">Đã học 128 buổi</div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="student-card">
-                  <img
-                    src="public/c8-student3.png"
-                    alt="play"
-                    class="student-card-img"
-                  />
-                  <div class="student-card-content space-y-1">
-                    <div class="student-card-name">Hà Khánh Huyền</div>
-                    <div class="student-card-desc">Giải nhất Talent Voice</div>
-                    <div class="student-card-desc">Đã học 98 buổi</div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="student-card">
-                  <img
-                    src="public/c8-student4.png"
-                    alt="play"
-                    class="student-card-img"
-                  />
-                  <div class="student-card-content space-y-1">
-                    <div class="student-card-name">Phùng Khánh Linh</div>
-                    <div class="student-card-desc">Giải nhất Talent Voice</div>
-                    <div class="student-card-desc">Đã học 98 buổi</div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="student-card">
-                  <img
-                    src="public/c8-student5.png"
-                    alt="play"
-                    class="student-card-img"
-                  />
-                  <div class="student-card-content space-y-1">
-                    <div class="student-card-name">Lê Ngọc Minh Thư</div>
-                    <div class="student-card-desc">Giải nhất Talent Voice</div>
-                    <div class="student-card-desc">Đã học 98 buổi</div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="student-card">
-                  <img
-                    src="public/c8-student6.png"
-                    alt="play"
-                    class="student-card-img"
-                  />
-                  <div class="student-card-content space-y-1">
-                    <div class="student-card-name">Nguyễn Hương Trà</div>
-                    <div class="student-card-desc">Giải nhất Talent Voice</div>
-                    <div class="student-card-desc">Đã học 116 buổi</div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="student-card">
-                  <img
-                    src="public/c8-student7.png"
-                    alt="play"
-                    class="student-card-img"
-                  />
-                  <div class="student-card-content space-y-1">
-                    <div class="student-card-name">Trương Công Gia Hưng</div>
-                    <div class="student-card-desc">Giải nhất Talent Voice</div>
-                    <div class="student-card-desc">Đã học 116 buổi</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+          <div class="uk-accordion-content">
+            <p>
+              💡 Chương trình dành cho những ai muốn kiếm thêm thu nhập bằng
+              cách giới thiệu học sinh tham gia khóa học tiếng Anh tại Chip
+              Chip. Bạn chỉ cần giới thiệu, mọi bước còn lại Chip Chip sẽ lo!
+            </p>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Người nổi tiếng chọn Chip Chip -->
-    <div class="celebrity">
-      <div class="">
-        <div class="celebrity-container">
-          <div class="platform-title">
-            <div class="flex-center">
-              <div style="position: relative; color: #ff9914">
-                Người nổi tiếng chọn <br class="platform-break" />
-                Chip Chip
-                <img
-                  class="platform-title-line"
-                  src="public/c2-line.svg"
-                  alt="line"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="uk-position-relative uk-visible-toggle celebrity-content"
-            tabindex="-1"
-            uk-slider="center: false; autoplay: true; autoplay-interval: 5000; animation: push"
+        </li>
+        <li>
+          <a class="uk-accordion-title" href>
+            <p>
+              <img
+                class="max-md:size-5 max-md:mt-0.5 mr-2 md:mr-3"
+                src="public/icon/7.1.svg"
+                alt="line"
+              />
+              2. Tôi cần điều kiện gì để trở thành Đại sứ?
+            </p></a
           >
-            <div class="uk-slider-items uk-child-width-expand uk-grid">
-              <div>
-                <div class="celebrity-card">
-                  <img
-                    src="public/c9-celebrity1.png"
-                    alt="play"
-                    class="celebrity-card-img"
-                  />
-                  <div class="celebrity-card-content space-y-6">
-                    <div class="flex-center">
-                      <img
-                        src="public/icon/c10-quote.svg"
-                        alt="quote"
-                        class="celebrity-card-quote"
-                      />
-                    </div>
-                    <div class="celebrity-card-desc">
-                      Con tôi đã tiến bộ rõ rệt và tự tin hơn nhiều nhờ cách
-                      Chip Chip tập trung vào việc phát âm và từ vựng, điều này
-                      rất quan trọng với trẻ
-                    </div>
-                    <div class="celebrity-card-desc-sub">
-                      Diễn viên Vân Trang & bé Nì
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="celebrity-card">
-                  <img
-                    src="public/c9-celebrity1.png"
-                    alt="play"
-                    class="celebrity-card-img"
-                  />
-                  <div class="celebrity-card-content space-y-6">
-                    <div class="flex-center">
-                      <img
-                        src="public/icon/c10-quote.svg"
-                        alt="quote"
-                        class="celebrity-card-quote"
-                      />
-                    </div>
-                    <div class="celebrity-card-desc">
-                      Con tôi đã tiến bộ rõ rệt và tự tin hơn nhiều nhờ cách
-                      Chip Chip tập trung vào việc phát âm và từ vựng, điều này
-                      rất quan trọng với trẻ
-                    </div>
-                    <div class="celebrity-card-desc-sub">
-                      Diễn viên Vân Trang & bé Nì
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="celebrity-card">
-                  <img
-                    src="public/c9-celebrity1.png"
-                    alt="play"
-                    class="celebrity-card-img"
-                  />
-                  <div class="celebrity-card-content space-y-6">
-                    <div class="flex-center">
-                      <img
-                        src="public/icon/c10-quote.svg"
-                        alt="quote"
-                        class="celebrity-card-quote"
-                      />
-                    </div>
-                    <div class="celebrity-card-desc">
-                      Con tôi đã tiến bộ rõ rệt và tự tin hơn nhiều nhờ cách
-                      Chip Chip tập trung vào việc phát âm và từ vựng, điều này
-                      rất quan trọng với trẻ
-                    </div>
-                    <div class="celebrity-card-desc-sub">
-                      Diễn viên Vân Trang & bé Nì
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+          <div class="uk-accordion-content">
+            <p>
+              💡 Không yêu cầu kinh nghiệm hay chuyên môn, chỉ cần bạn có mong
+              muốn chia sẻ về chương trình học của Chip Chip đến phụ huynh có
+              con trong độ tuổi phù hợp.
+            </p>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
 
     <!-- Đăng ký  -->
     <div id="form-register" class="register-wrapper uk-position-relative">
       <div class="uk-child-width-1-2 uk-flex uk-flex-center">
-        <div class="register">
-          <img src="public/c10-img.png" alt="register" class="register-img" />
+        <div class="register container">
           <div class="register-content exeption">
-            <div class="register-title">
-              <div class="flex-center">
-                <div style="position: relative">
-                  Tặng suất học trải nghiệm và đánh giá trình độ miễn phí
-                  <img
-                    class="register-title-line"
-                    src="public/c2-line-orange.svg"
-                    alt="line"
-                  />
-                </div>
-              </div>
-              <div></div>
+            <div class="register-header">
+              <p class="register-sub-title">Đăng ký để trở thành</p>
+              <p class="register-title">Đại sứ giáo dục</p>
             </div>
             <form class="text-left register-form">
+              <div class="register-form-title">
+                <span>Chỉ còn</span>
+                <div class="flex items-center gap-2 mx-5">
+                  <p class="num">4</p>
+                  <p class="num">5</p>
+                </div>
+                <span>suất</span>
+              </div>
               <div>
-                <label for="name" class="register-form-label"
-                  >Tên của con <span style="color: red">*</span></label
-                >
                 <input
                   class="uk-input register-form-input"
                   type="text"
-                  placeholder="Nhập tên của con"
+                  placeholder="Họ và tên"
                   aria-label="Input"
                   name="name"
-                  id="name"
                 />
               </div>
               <div>
-                <label for="name" class="register-form-label"
-                  >Năm sinh <span style="color: red">*</span></label
-                >
-                <div
-                  uk-form-custom="target: > * > span:first-child"
-                  style="
-                    border-radius: 999px;
-                    width: 100%;
-                    background-color: #fff;
-                  "
-                >
-                  <select
-                    class="w-full"
-                    aria-label="Custom controls"
-                    style="color: #535557; height: 44px; border-radius: 9999px"
-                  >
-                    <option value="">Chọn năm sinh</option>
-                    <option value="2010">2010</option>
-                    <option value="2011">2011</option>
-                    <option value="2012">2012</option>
-                    <option value="2013">2013</option>
-                    <option value="2014">2014</option>
-                    <option value="2015">2015</option>
-                    <option value="2016">2016</option>
-                    <option value="2017">2017</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2019">2020</option>
-                    <option value="2019">2021</option>
-                  </select>
-                  <button
-                    class="register-form-select"
-                    type="button"
-                    tabindex="-1"
-                    style="border-radius: 999px; text-transform: none"
-                  >
-                    <span class="uk-margin-remove"></span>
-                    <span uk-icon="icon: chevron-down"></span>
-                  </button>
-                </div>
-              </div>
-              <div>
-                <label for="name" class="register-form-label"
-                  >Số điện thoại <span style="color: red">*</span></label
-                >
                 <input
                   class="uk-input register-form-input"
                   type="text"
-                  placeholder="Số điện thoại của phụ huynh"
+                  placeholder="Số điện thoại"
                   aria-label="Input"
-                  name="name"
-                  id="name"
+                  name="phone"
+                />
+              </div>
+              <div>
+                <input
+                  class="uk-input register-form-input"
+                  type="text"
+                  placeholder="Email"
+                  aria-label="Input"
+                  name="mail"
+                />
+              </div>
+
+              <div>
+                <input
+                  class="uk-input register-form-input"
+                  type="text"
+                  placeholder="Mật khẩu"
+                  aria-label="Input"
+                  name="password"
                 />
               </div>
               <div
@@ -1085,18 +625,19 @@
               >
                 <button
                   class="button-primary"
-                  style="
-                    height: 100%;
-                    width: 100%;
-                    background-color: #fff;
-                    color: #339316;
-                    border-color: transparent;
-                  "
+                  style="height: 100%; width: 100%; border-color: transparent"
                 >
                   Đăng ký ngay
                 </button>
               </div>
             </form>
+          </div>
+          <div class="flex items-end h-full w-full justify-end">
+            <img
+              src="public/candidates/8.png"
+              alt="register"
+              class="register-img"
+            />
           </div>
         </div>
       </div>

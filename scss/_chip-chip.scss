@@ -14,7 +14,6 @@
     width: 100%;
     background-size: cover;
     background-position: left;
-    background-position: top;
     padding-top: 50px;
     padding-bottom: 70px;
   }
@@ -41,24 +40,11 @@
 
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 
     @include maxw(780) {
       display: block;
     }
-
-    // &-right {
-    //   margin-top: 90px;
-    //   @include maxw(1180) {
-    //     margin-top: 48px;
-    //     padding: 0 16px 0 32px;
-    //   }
-    // }
-
-    // &-left {
-    //   @include maxw(1180) {
-    //     padding: 0 32px 0 16px;
-    //   }
-    // }
   }
   &-card {
     display: flex;
