@@ -306,6 +306,12 @@ p {
   }
 }
 
+@media screen and (max-width: 1600px) {
+  .modal-center {
+    zoom: 0.85;
+  }
+}
+
 .register {
   z-index: 1;
   border-radius: 8px;
@@ -329,11 +335,6 @@ p {
 @media screen and (max-width: 768px) {
   .register-wrapper {
     padding: 24px 0 0 0;
-  }
-}
-@media screen and (max-width: 1600px) {
-  .register-wrapper.modal {
-    zoom: 0.85;
   }
 }
 .register-modal {
@@ -473,7 +474,6 @@ p {
   }
 }
 .register-img-discount {
-  max-height: 60px;
   padding: 4px 10px 0;
 }
 @media (min-width: 1023px) {
