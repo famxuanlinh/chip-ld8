@@ -8,13 +8,13 @@
   width: 100%;
   background-position: bottom;
   padding-bottom: 90px;
-  padding-top: 116px;
+  padding-top: 76px;
 
   @include maxw(1180) {
     width: 100%;
     background-size: cover;
     background-position: left;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 70px;
   }
 

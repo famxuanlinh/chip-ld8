@@ -239,6 +239,9 @@
   .w-full {
     width: 100%;
   }
+  .flex-none {
+    flex: none;
+  }
   .flex-grow {
     flex-grow: 1;
   }
@@ -351,6 +354,9 @@
   .bg-\[\#FF9914\] {
     background-color: #FF9914;
   }
+  .bg-\[\#f4fcf3\] {
+    background-color: #f4fcf3;
+  }
   .bg-\[\/public\/candidates\/popup-bg\.png\] {
     background-color: /public/candidates/popup-bg.png;
   }
@@ -457,6 +463,38 @@
   .md\:mr-3 {
     @media (width >= 48rem) {
       margin-right: calc(var(--spacing) * 3);
+    }
+  }
+  .md\:scale-75 {
+    @media (width >= 48rem) {
+      --tw-scale-x: 75%;
+      --tw-scale-y: 75%;
+      --tw-scale-z: 75%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+  .md\:scale-85 {
+    @media (width >= 48rem) {
+      --tw-scale-x: 85%;
+      --tw-scale-y: 85%;
+      --tw-scale-z: 85%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+  .md\:scale-90 {
+    @media (width >= 48rem) {
+      --tw-scale-x: 90%;
+      --tw-scale-y: 90%;
+      --tw-scale-z: 90%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+  .md\:scale-95 {
+    @media (width >= 48rem) {
+      --tw-scale-x: 95%;
+      --tw-scale-y: 95%;
+      --tw-scale-z: 95%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
     }
   }
   .md\:text-\[44px\] {
@@ -592,4 +630,19 @@
 @property --tw-drop-shadow {
   syntax: "*";
   inherits: false;
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
 }
