@@ -443,6 +443,11 @@ p {
   right: 0;
   width: 133px;
 }
+@media screen and (max-width: 1600px) {
+  .register-title-line-modal {
+    zoom: 0.75;
+  }
+}
 @media screen and (max-width: 1180px) {
   .register-title-line-modal {
     position: absolute;

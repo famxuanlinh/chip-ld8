@@ -138,6 +138,10 @@
         right: 0;
         width: 133px;
 
+        @include maxw(1600) {
+          zoom: 0.75;
+        }
+
         @include maxw(1180) {
           position: absolute;
           bottom: 0;
