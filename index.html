@@ -74,7 +74,13 @@
           <div class="uk-visible@l flex items-center">
             <ul class="uk-navbar-nav !gap-4">
               <li class="flex-center">
-                <button class="header-button bg-[#4AB749]">Đăng ký</button>
+                <button
+                  type="button"
+                  uk-toggle="target: #modal-center"
+                  class="header-button bg-[#4AB749]"
+                >
+                  Đăng ký
+                </button>
               </li>
               <li class="flex-center">
                 <button class="header-button bg-[#FF9914]">Đăng nhập</button>
@@ -118,10 +124,7 @@
             >
               <ul class="w-full p-0 space-y-8" style="list-style: none">
                 <li>
-                  <a
-                    onclick="handleNavigate()"
-                    class="header-item-mobile"
-                    href="#"
+                  <a href="#modal-center" uk-toggle class="header-item-mobile"
                     >Đăng ký</a
                   >
                 </li>
