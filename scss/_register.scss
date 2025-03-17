@@ -23,6 +23,12 @@
     @include maxw(768) {
       padding: 24px 0 0 0;
     }
+
+    &.modal {
+      @include maxw(1600) {
+        zoom: 0.85;
+      }
+    }
   }
 
   &-modal {
@@ -137,10 +143,6 @@
         bottom: 0px;
         right: 0;
         width: 133px;
-
-        @include maxw(1600) {
-          zoom: 0.75;
-        }
 
         @include maxw(1180) {
           position: absolute;

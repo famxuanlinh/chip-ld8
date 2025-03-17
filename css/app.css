@@ -331,6 +331,11 @@ p {
     padding: 24px 0 0 0;
   }
 }
+@media screen and (max-width: 1600px) {
+  .register-wrapper.modal {
+    zoom: 0.85;
+  }
+}
 .register-modal {
   background-image: url(/public/candidates/popup-bg.png);
   background-color: #e3fcdc;
@@ -442,11 +447,6 @@ p {
   bottom: 0px;
   right: 0;
   width: 133px;
-}
-@media screen and (max-width: 1600px) {
-  .register-title-line-modal {
-    zoom: 0.75;
-  }
 }
 @media screen and (max-width: 1180px) {
   .register-title-line-modal {
