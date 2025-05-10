@@ -552,12 +552,6 @@ p {
     object-fit: cover;
   }
 }
-@media (min-width: 1023px) {
-  .register1-img.modal {
-    margin-left: -30px;
-    margin-bottom: -30px;
-  }
-}
 @media (max-width: 1023px) {
   .register1-img.modal {
     display: none;

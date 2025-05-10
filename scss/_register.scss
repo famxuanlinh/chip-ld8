@@ -392,10 +392,6 @@
     }
 
     &.modal {
-      @include min-lg {
-        margin-left: -30px;
-        margin-bottom: -30px;
-      }
       @include max-lg {
         display: none;
       }

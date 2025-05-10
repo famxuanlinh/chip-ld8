@@ -236,6 +236,9 @@
       max-width: 96rem;
     }
   }
+  .\!m-0 {
+    margin: calc(var(--spacing) * 0) !important;
+  }
   .m-7 {
     margin: calc(var(--spacing) * 7);
   }
@@ -319,6 +322,9 @@
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
   }
   .mb-\[111px\] {
     margin-bottom: 111px;
@@ -416,6 +422,9 @@
   }
   .flex-col {
     flex-direction: column;
+  }
+  .\!items-end {
+    align-items: flex-end !important;
   }
   .\!items-start {
     align-items: flex-start !important;
@@ -515,6 +524,9 @@
       --tw-border-style: dashed;
       border-style: dashed;
     }
+  }
+  .overflow-hidden {
+    overflow: hidden;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
