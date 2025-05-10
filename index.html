@@ -42,7 +42,7 @@
         </div>
       </div>
     </div>
-    <div class="advisory">
+    <!-- <div class="advisory">
       <a
         class="advisory-item zalo"
         target="_blank"
@@ -55,636 +55,586 @@
         <img src="public/icon/hotline-icon.png" alt="" />
         <span>0356260850</span>
       </a>
-    </div>
-    <!----Header, menu -->
-    <div id="header" uk-sticky style="z-index: 11" class="header-new">
-      <div class="uk-container">
-        <nav
-          class="uk-navbar-container uk-navbar-transparent"
-          style="display: flex; justify-content: space-between"
-        >
-          <div class="uk-flex uk-flex-middle">
-            <a
-              class="uk-navbar-item pl-0 uk-logo"
-              href="https://chipchip.edu.vn"
-            >
-              <img class="header-logo" src="/public/logo.svg" alt=""
-            /></a>
-          </div>
-          <div class="uk-visible@l flex items-center">
-            <ul class="uk-navbar-nav !gap-4">
-              <li class="flex-center">
-                <button
-                  type="button"
-                  uk-toggle="target: #modal-center"
-                  class="header-button bg-[#4AB749]"
-                >
-                  Đăng ký
-                </button>
-              </li>
-              <li class="flex-center">
-                <button class="header-button bg-[#FF9914]">Đăng nhập</button>
-              </li>
-            </ul>
-          </div>
-          <div class="uk-inline uk-hidden@l">
-            <div class="flex-center h-full">
-              <!-- <button
-                style="
-                  color: #272b30;
-                  border: 1px solid #272b30;
-                  border-radius: 100px;
-                  padding: 8px 16px;
-                  background-color: transparent;
-                  font-weight: 600;
-                  font-size: 14px;
-                  margin-right: 16px;
-                "
-              >
-                Đăng nhập
-              </button> -->
-              <button
-                class="h-full"
-                style="border: none; background-color: transparent"
-                type="button"
-              >
-                <img src="public/candidates/menu.svg" alt="" />
-              </button>
-            </div>
-            <div
-              id="dropdown-header"
-              class="uk-card uk-card-body uk-card-default rounded-3 uk-box-shadow-small"
-              uk-dropdown="mode: click ; offset: 10; boundary-align: true;"
-              style="
-                width: max-content;
-                padding: 24px;
-                background-color: rgba(255, 255, 255);
-                gap: 32px;
-              "
-            >
-              <ul class="w-full p-0 space-y-8" style="list-style: none">
-                <li>
-                  <a href="#modal-center" uk-toggle class="header-item-mobile"
-                    >Đăng ký</a
-                  >
-                </li>
-                <li style="width: 100vw">
-                  <a
-                    onclick="handleNavigate()"
-                    class="header-item-mobile"
-                    href="#"
-                    >Đăng nhập</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
-    <!----End header, menu-->
+    </div> -->
 
     <!-- Main banner -->
     <div class="hero">
       <div class="container">
         <div class="hero-container mt-8 md:mt-20">
-          <div class="hero-content">
-            <div class="hero-content-sub-title">Đại sứ giáo dục Chip Chip</div>
-            <div class="hero-content-title">
-              Giới thiệu học sinh <br />
-              Rinh thu nhập khủng
+          <div class="hero-content flex-none">
+            <img
+              class="header-logo mb-4 mt-6 md:mt-16 md:mb-8"
+              src="/public/logo.svg"
+              alt=""
+            />
+            <img class="" src="public/summers/1.2.png" alt="" />
+            <div
+              class="mt-4 mb-6 text-[#017200] text-lg font-bold md:text-[22px]"
+            >
+              Chương trình tiếng Anh online hè dành cho bé 4-12 tuổi
             </div>
-            <p class="hero-content-desc">
-              Tham gia cộng đồng với hơn 3000 Đại sứ của tiếng Anh trực tuyến
-              Chip Chip, thu nhập 10 - 30 triệu/tháng
-            </p>
-            <div class="hero-content-btn">
+            <div
+              class="bg-[url(/public/summers/1.5.png)] max-w-120 rounded-[10] flex items-center px-4 py-2 space-x-2 md:space-x-3 bg-cover"
+            >
+              <img class="" src="public/summers/icons/ticket.png" alt="" />
+              <p class="font-semibold text-[#723300] md:text-xl">
+                Giảm tới 43% học phí khi đăng ký sớm!
+              </p>
+            </div>
+            <div
+              class="bg-[url(/public/summers/1.5.png)] mt-4 max-w-120 rounded-[10] flex items-center px-4 py-2 space-x-2 md:space-x-3 bg-cover"
+            >
+              <img class="" src="public/summers/icons/gift.png" alt="" />
+              <p class="font-semibold text-[#723300] md:text-xl">
+                Bộ quà tặng hè siêu hấp dẫn
+              </p>
+            </div>
+
+            <div class="mt-8 mb-10 md:max-w-[256px]">
               <a
-                href="#modal-center"
-                uk-toggle
-                class="button-primary button-primary-big max-sm:!p-0"
-                >Đăng ký trở thành đại sứ ngay
+                href="#form-register"
+                class="button-primary btn-animation w-full flex-center bg-primary-green px-5 grayscale-white button-m"
+              >
+                Đăng ký học thử
               </a>
             </div>
           </div>
           <div class="hero-image">
-            <img src="public/candidates/1.png" alt="title 1" />
+            <img src="public/summers/1.1.png" alt="title 1" />
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Những con số ấn tượng -->
-    <div class="about-proud">
-      <div class="about-proud-title">Những con số ấn tượng</div>
-      <div class="about-proud-body">
+    <!--   3 LÝ DO PHỤ HUYNH TIN CHỌN CHIP CHIP -->
+    <div class="about-proud z-1 max-md:-mt-16 -mt-[35px] !pt-25">
+      <div class="about-proud-title">3 LÝ DO PHỤ HUYNH TIN CHỌN CHIP CHIP</div>
+      <div class="about-proud-body grid grid-cols-3 gap-6">
         <div class="about-proud-card">
           <img
-            class="about-proud-card-icon"
-            src="public/icon/2.1.png"
+            class="about-proud-card-image"
+            src="public/summers/3.1.webp"
             alt="teacher"
           />
 
-          <p class="about-proud-card-title">
-            3,000 + <br />
-            Đại sứ
+          <p class="about-proud-card-title text-[#FF9914]">
+            600+ giáo viên nước ngoài hạng A
           </p>
           <p class="about-proud-card-desc">
-            Trên khắp cả nước, từ phụ huynh, giáo <br />
-            viên đến người kinh doanh online
+            100% có chứng chỉ TESOL/CELTA, nhiều năm kinh nghiệm dạy trẻ em 4-12
+            tuổi, tuyển chọn khắt khe qua 6 bước
           </p>
         </div>
         <div class="about-proud-card">
           <img
-            class="about-proud-card-icon"
-            src="public/icon/2.2.png"
+            class="about-proud-card-image"
+            src="public/summers/3.2.webp"
             alt="teacher"
           />
 
-          <p class="about-proud-card-title">
-            7,000 +<br />
-            Học sinh
+          <p class="about-proud-card-title text-[#4AB749]">
+            Học vui hơn với bài giảng tương tác
           </p>
           <p class="about-proud-card-desc">
-            Đã được giới thiệu và theo học tại <br />
-            Chip Chip
+            Bài giảng được thiết kế dưới dạng trò chơi tương tác đa giác quan
+            giúp kích thích tối đa hào hứng học tập của bé
           </p>
         </div>
         <div class="about-proud-card">
           <img
-            class="about-proud-card-icon"
-            src="public/icon/2.3.png"
+            class="about-proud-card-image"
+            src="public/summers/3.3.webp"
             alt="teacher"
           />
 
-          <p class="about-proud-card-title">
-            Thu nhập lên đến <br />
-            10 – 30 triệu/tháng
+          <p class="about-proud-card-title text-[#8E59FF]">
+            Thuận tiện theo dõi tiến bộ
           </p>
           <p class="about-proud-card-desc">
-            Cho nhiều Đại sứ, thậm chí tốt hơn
+            Với app học tập thiết kế độc quyền, phụ huynh dễ dàng nắm bắt tình
+            hình học tập của con mọi lúc, mọi nơi
           </p>
         </div>
       </div>
-    </div>
-    <div class="bg-[#f4fcf3]"><div class="about-proud-footer"></div></div>
-
-    <!-- Quyền lợi -->
-    <div class="chip space-y-4 relative">
-      <div class="chip-title">Quyền lợi hấp dẫn</div>
-      <img
-        class="chip-image1"
-        src="public/candidates/3.webp"
-        style="width: 1000px"
-        alt="teacher"
-      />
-      <div class="relative chip-body max-lg:space-y-5 z-1">
-        <div class="space-y-5 lg:space-y-9 chip-body-left">
-          <div class="chip-card bg-[#D5F6D3]">
-            <img
-              class="chip-card-icon"
-              src="public/icon/3.1.png"
-              alt="teacher"
-            />
-
-            <p class="chip-card-title">Thu nhập hấp dẫn, không giới hạn</p>
-          </div>
-          <div class="chip-card bg-[#CDDFFA]">
-            <img
-              class="chip-card-icon"
-              src="public/icon/3.2.png"
-              alt="teacher"
-            />
-            <p class="chip-card-title">
-              Linh hoạt thời gian, không áp lực doanh số
-            </p>
-          </div>
-          <div class="chip-card bg-[#FEECCA]">
-            <img
-              class="chip-card-icon"
-              src="public/icon/3.3.png"
-              alt="teacher"
-            />
-            <p class="chip-card-title">Hỗ trợ chuyên nghiệp</p>
-          </div>
-        </div>
-        <div class="space-y-5 lg:space-y-9 chip-body-right">
-          <div class="chip-card bg-[#E5DBFA]">
-            <img
-              class="chip-card-icon"
-              src="public/icon/3.4.png"
-              alt="teacher"
-            />
-            <p class="chip-card-title">Không cần tư vấn, không cần chốt sale</p>
-          </div>
-          <div class="chip-card bg-[#FDDCCC]">
-            <img
-              class="chip-card-icon"
-              src="public/icon/3.5.png"
-              alt="teacher"
-            />
-            <p class="chip-card-title">Thưởng thêm hấp dẫn</p>
-          </div>
-          <div class="chip-card bg-[#B9F6D7]">
-            <img
-              class="chip-card-icon"
-              src="public/icon/3.6.png"
-              alt="teacher"
-            />
-            <p class="chip-card-title">Cộng đồng kết nối & phát triển</p>
-          </div>
-        </div>
-      </div>
-      <div class="hero-content-btn flex justify-center !mt-9 max-md:!mx-6">
+      <div class="mt-8 mb-10 flex justify-center">
         <a
-          href="#modal-center"
-          uk-toggle
-          class="button-primary button-primary-big"
-          >Đăng ký ngay
+          href="#form-register"
+          class="button-primary max-w-[256px] btn-animation w-full flex-center bg-primary-green px-5 grayscale-white button-m"
+        >
+          Đăng ký học thử
         </a>
       </div>
     </div>
 
-    <!-- Đừng bỏ qua cơ hội nếu bạn là -->
-    <div class="benefit">
-      <div class="benefit-title">Đừng bỏ qua cơ hội nếu bạn là</div>
+    <!--  LỚP HỌC HÈ TẠI CHIP CHIP CÓ GÌ? -->
+    <div
+      class="about-proud max-sm:!bg-left-bottom !pt-[150px] -mt-[150px] !bg-[url(/public/summers/3-bg.png)]"
+    >
+      <div class="about-proud-title !mb-0 !text-[#069114]">
+        LỚP HỌC HÈ TẠI CHIP <br class="sm:hidden" />
+        CHIP CÓ GÌ?
+      </div>
+      <div
+        class="md:text-2xl text-center text-xl mt-2 mb-8 font-semibold text-[#57595C]"
+      >
+        Cùng ghé thăm một lớp học online của bé tại Chip Chip
+      </div>
+      <div class="about-proud-body max-md:space-y-8 grid grid-cols-3 gap-6">
+        <div class="about-proud-card !items-start">
+          <img
+            class="about-proud-card-image"
+            src="public/summers/4.1.webp"
+            alt="teacher"
+          />
+          <div
+            class="font-extrabold text-5xl mt-6 leading-[48px] text-[#FF9914]"
+          >
+            01
+          </div>
+          <p class="about-proud-card-title text-[#FF9914] !mt-2">
+            Trước buổi học
+          </p>
+          <p class="about-proud-card-desc">
+            Xem nội dung kiến thức trước khi buổi học diễn ra
+          </p>
+        </div>
+        <div class="about-proud-card !items-start">
+          <img
+            class="about-proud-card-image"
+            src="public/summers/4.2.webp"
+            alt="teacher"
+          />
+          <div
+            class="font-extrabold text-5xl mt-6 leading-[48px] text-[#4AB749]"
+          >
+            02
+          </div>
+          <p class="about-proud-card-title !mt-2 text-[#4AB749]">
+            Trong buổi học
+          </p>
+          <p class="about-proud-card-desc">
+            Học online 1 kèm 1 với giáo viên nước ngoài hạng A trong lớp
+          </p>
+        </div>
+        <div class="about-proud-card !items-start">
+          <img
+            class="about-proud-card-image"
+            src="public/summers/4.3.webp"
+            alt="teacher"
+          />
+          <div
+            class="font-extrabold text-5xl mt-6 leading-[48px] text-[#8E59FF]"
+          >
+            03
+          </div>
+          <p class="about-proud-card-title !mt-2 text-[#8E59FF]">
+            Sau buổi học
+          </p>
+          <p class="about-proud-card-desc">
+            Luyện tập củng cố thêm kiến thức đã học với hoạt động trò chơi tương
+            tác sinh động
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BÙNG NỔ ƯU ĐÃI HÈ 2025 -->
+
+    <div class="discount">
+      <div class="discount-title">
+        BÙNG NỔ <br class="sm:hidden" />
+        ƯU ĐÃI HÈ 2025
+      </div>
+      <div class="flex justify-center">
+        <img
+          class="max-h-[133px]"
+          src="/public/summers/4.5.png"
+          alt="teacher"
+        />
+      </div>
+      <div class="flex justify-center">
+        <img src="public/summers/4.0.png" alt="teacher" />
+      </div>
+      <div class="discount-body">
+        <div class="discount-card bg-[url(/public/summers/4.1.png)]">
+          <img
+            class="discount-card-image"
+            src="public/summers/4.1.1.png"
+            alt="teacher"
+          />
+
+          <p class="discount-card-title text-[#0E9B04] !mt-2">
+            Giảm tới 43% học phí <br />
+            cho các gói đăng ký sớm
+          </p>
+        </div>
+        <div class="discount-card bg-[url(/public/summers/4.2.png)]">
+          <img
+            class="discount-card-image"
+            src="public/summers/4.2.1.png"
+            alt="teacher"
+          />
+
+          <p class="discount-card-title !mt-2 text-[#653BB2]">
+            Tặng 1 năm <br />
+            tài khoản Raz-Kids
+          </p>
+        </div>
+        <div class="discount-card bg-[url(/public/summers/4.3.png)]">
+          <img
+            class="discount-card-image"
+            src="public/summers/4.3.1.png"
+            alt="teacher"
+          />
+
+          <p class="discount-card-title !mt-2 text-[#156BEC]">
+            Máy ảnh kỹ thuật số mini <br />
+            cho trẻ em
+          </p>
+        </div>
+      </div>
+      <div class="md:text-lg font-semibold text-[#06367F] text-center py-4">
+        Ưu đãi áp dụng đến hết ngày 31/07/2025
+      </div>
+      <div class="mt-8 mb-10 flex justify-center">
+        <a
+          href="#form-register"
+          class="button-primary !text-[#3246B9] !bg-white max-w-[256px] btn-animation w-full flex-center bg-primary-green px-5 grayscale-white button-m"
+        >
+          Đăng ký học thử
+        </a>
+      </div>
+    </div>
+
+    <!-- SAU KHOÁ HỌC HÈ NÀY, BÉ NHẬN ĐƯỢC GÌ? -->
+    <div class="result z-2">
+      <div class="result-title">
+        SAU KHOÁ HỌC HÈ NÀY, <br class="sm:hidden" />
+        BÉ NHẬN ĐƯỢC GÌ?
+      </div>
+
+      <div class="result-body">
+        <div class="result-card bg-contain bg-[#5CC65B]">
+          <div class="result-card-title">
+            <div class="font-extrabold text-[40px] leading-[40px] text-white">
+              01
+            </div>
+            <p class="result-card-desc text-white !mt-2">
+              Nói tiếng Anh tự nhiên,<br />
+              phát âm chuẩn
+            </p>
+          </div>
+          <img
+            class="w-full rounded-b-2xl max-h-[246px] h-full"
+            src="public/summers/5.1.png"
+            alt="teacher"
+          />
+        </div>
+        <div class="result-card bg-contain bg-[#3078E3]">
+          <div class="result-card-title">
+            <div class="font-extrabold text-[40px] leading-[40px] text-white">
+              02
+            </div>
+            <p class="result-card-desc text-white !mt-2">
+              Nắm chắc từ vựng <br />
+              và cấu trúc câu phổ biến
+            </p>
+          </div>
+          <img
+            class="w-full rounded-b-2xl max-h-[246px] h-full"
+            src="public/summers/5.2.png"
+            alt="teacher"
+          />
+        </div>
+        <div class="result-card bg-contain bg-[#F5AD41]">
+          <div class="result-card-title">
+            <div class="font-extrabold text-[40px] leading-[40px] text-white">
+              03
+            </div>
+            <p class="result-card-desc text-white !mt-2">
+              Phản xạ tiếng Anh nhanh hơn khi <br />
+              nghe và trả lời
+            </p>
+          </div>
+          <img
+            class="w-full rounded-b-2xl max-h-[246px] h-full"
+            src="public/summers/5.3.png"
+            alt="teacher"
+          />
+        </div>
+        <div class="result-card bg-contain bg-[#A668E0]">
+          <div class="result-card-title">
+            <div class="font-extrabold text-[40px] leading-[40px] text-white">
+              04
+            </div>
+            <p class="result-card-desc text-white !mt-2">
+              Sẵn sàng bước vào năm học mới <br />
+              và chinh phục kỳ thi quốc tế
+            </p>
+          </div>
+          <img
+            class="w-full rounded-b-2xl"
+            src="public/summers/5.4.png"
+            alt="teacher"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- PHỤ HUYNH NÓI GÌ VỀ CHIP CHIP? -->
+    <div class="benefit -mt-[150px] -mb-2 !pt-[150px] z-1">
+      <div class="benefit-title">
+        PHỤ HUYNH NÓI GÌ VỀ <br class="md:hidden" />
+        CHIP CHIP?
+      </div>
       <div class="benefit-body">
-        <div class="flex items-end">
-          <img
-            class="benefit-image"
-            src="public/candidates/4.webp"
-            alt="teacher"
-          />
-        </div>
         <div class="benefit-content">
-          <div class="benefit-card bg-[#FDDCCC]">
-            <div class="benefit-card-arrow bg-[#FDDCCC]"></div>
-            Giáo viên, người làm trong lĩnh vực giáo dục
-          </div>
-          <div class="benefit-card bg-[#D5F6D3]">
-            <div class="benefit-card-arrow bg-[#D5F6D3]"></div>
-            Người kinh doanh online, KOLs, KOCs, reviewer
-          </div>
-          <div class="benefit-card bg-[#E5DBFA]">
-            <div class="benefit-card-arrow bg-[#E5DBFA]"></div>
-            Nhân viên văn phòng, mẹ bỉm sữa, người tìm kiếm công việc linh hoạt
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Làm thế nào để có thu nhập từ Chip Chip? -->
-    <div class="income">
-      <div class="income-title">Làm thế nào để có thu nhập từ Chip Chip?</div>
-      <div class="income-body">
-        <div class="income-card">
-          <div class="income-card-icon-wrapper">
+          <div class="benefit-card">
             <img
-              class="income-card-icon"
-              src="public/icon/5.1.png"
+              class="benefit-card-image"
+              src="public/summers/6.1.png"
               alt="teacher"
             />
-          </div>
-
-          <p class="income-card-title text-[#ff9914]">Bước 1</p>
-          <p class="income-card-sub-title">Giới thiệu khách hàng</p>
-          <p class="income-card-desc">
-            Chia sẻ link Đại sứ của bạn đến phụ huynh có nhu cầu cho con học
-            tiếng Anh.
-          </p>
-        </div>
-        <div class="income-card">
-          <div class="income-card-icon-wrapper">
-            <img
-              class="income-card-icon"
-              src="public/icon/5.2.png"
-              alt="teacher"
-            />
-          </div>
-
-          <p class="income-card-title text-[#4AB749]">Bước 2</p>
-          <p class="income-card-sub-title">Chip Chip liên hệ & tư vấn</p>
-          <p class="income-card-desc">
-            Đội ngũ Chip Chip sẽ chủ động gọi điện, đặt lịch học thử và tư vấn
-            chuyên sâu cho phụ huynh.
-          </p>
-        </div>
-        <div class="income-card">
-          <div class="income-card-icon-wrapper">
-            <img
-              class="income-card-icon"
-              src="public/icon/5.3.png"
-              alt="teacher"
-            />
-          </div>
-
-          <p class="income-card-title text-[#8E59FF]">Bước 3</p>
-          <p class="income-card-sub-title">Học sinh tham gia khóa học</p>
-          <p class="income-card-desc">
-            Sau khi học thử, nếu phụ huynh đăng ký khóa học chính thức, giao
-            dịch sẽ được ghi nhận.
-          </p>
-        </div>
-        <div class="income-card">
-          <div class="income-card-icon-wrapper">
-            <img
-              class="income-card-icon"
-              src="public/icon/5.4.png"
-              alt="teacher"
-            />
-          </div>
-
-          <p class="income-card-title text-[#1E76F1]">Bước 4</p>
-          <p class="income-card-sub-title">Đối soát & nhận hoa hồng</p>
-          <p class="income-card-desc">
-            Chip Chip cập nhật kết quả, tiến hành đối soát và thanh toán hoa
-            hồng cho bạn theo chính sách.
-          </p>
-        </div>
-      </div>
-      <div class="hero-content-btn flex justify-center !mt-9 max-md:!mx-6">
-        <a
-          href="#modal-center"
-          uk-toggle
-          class="button-primary button-primary-big"
-          >Đăng ký ngay
-        </a>
-      </div>
-    </div>
-
-    <!-- Top Đại sứ nói gì về Chip Chip -->
-    <div class="candidate">
-      <div class="candidate-title">Top Đại sứ nói gì về Chip Chip</div>
-      <div class="candidate-body">
-        <div class="candidate-card">
-          <img
-            class="candidate-card-image rounded-t-[20px] flex-none"
-            src="public/candidates/6.1.webp"
-            alt="teacher"
-          />
-
-          <div class="candidate-card-body">
-            <p class="candidate-card-title text-[#ff9914]">Ms. Thương</p>
-            <p class="candidate-card-sub-title">
-              Thạc sĩ tâm lý giáo dục học <br />
-              Thu nhập: 40,000,000 VNĐ
-            </p>
-            <p class="candidate-card-desc">
-              Mình tin tưởng giới thiệu Chip Chip vì chương trình học rất chất
-              lượng, con mình cũng đang theo học và tiến bộ rõ rệt. Vừa giúp các
-              bé học tốt tiếng Anh, vừa có thu nhập – thật tuyệt vời!
-            </p>
-          </div>
-        </div>
-        <div class="candidate-card">
-          <img
-            class="candidate-card-image rounded-t-[20px] flex-none"
-            src="public/candidates/6.2.webp"
-            alt="teacher"
-          />
-
-          <div class="candidate-card-body">
-            <p class="candidate-card-title text-[#ff9914]">Ms. Ngọc</p>
-            <p class="candidate-card-sub-title">
-              Phó hiệu trưởng<br />
-              Thu nhập: 35,000,000 VNĐ
-            </p>
-            <p class="candidate-card-desc">
-              Là Phó Hiệu trưởng, tôi luôn mong muốn mang đến những chương trình
-              học chất lượng cho học sinh. Đồng hành cùng Chip Chip, tôi không
-              chỉ giúp các em tiếp cận tiếng Anh hiệu quả mà còn có thêm thu
-              nhập bền vững.
-            </p>
-          </div>
-        </div>
-        <div class="candidate-card">
-          <img
-            class="candidate-card-image rounded-t-[20px] flex-none"
-            src="public/candidates/6.3.webp"
-            alt="teacher"
-          />
-
-          <div class="candidate-card-body">
-            <p class="candidate-card-title text-[#ff9914]">Ms. Thảo</p>
-            <p class="candidate-card-sub-title">
-              Làm việc tự do<br />
-              Thu nhập: 15,000,000 VNĐ
-            </p>
-            <p class="candidate-card-desc">
-              Chip Chip hỗ trợ Đại sứ rất tốt, từ tài liệu truyền thông, tư vấn
-              khách hàng đến đối soát hoa hồng minh bạch. Mình cảm thấy yên tâm
-              khi hợp tác!
-            </p>
-          </div>
-        </div>
-        <div class="candidate-card">
-          <img
-            class="candidate-card-image rounded-t-[20px] flex-none"
-            src="public/candidates/6.4.webp"
-            alt="teacher"
-          />
-
-          <div class="candidate-card-body">
-            <p class="candidate-card-title text-[#ff9914]">Ms. Tú Thành</p>
-            <p class="candidate-card-sub-title">
-              Giáo viên<br />
-              Thu nhập: 18,000,000 VNĐ
-            </p>
-            <p class="candidate-card-desc">
-              Nếu bạn đang tìm một công việc tự do, không áp lực nhưng vẫn có
-              thu nhập tốt, hãy tham gia cùng mình làm Đại sứ Giáo dục của Chip
-              Chip nhé!
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Các câu hỏi thường gặp -->
-    <div class="faq container">
-      <div class="faq-title">Các câu hỏi thường gặp</div>
-      <ul uk-accordion="multiple: true" class="divide-y divide-dashed">
-        <li class="uk-open">
-          <a class="uk-accordion-title" href>
-            <p class="flex items-start">
+            <div class="benefit-card-content">
               <img
-                class="max-md:size-5 max-md:mt-0.5 mr-2 md:mr-3"
-                src="public/icon/7.1.svg"
-                alt="line"
+                class="benefit-card-content-arrow"
+                src="public/summers/icons/arrow.svg"
+                alt="teacher"
               />
-              1. Chương trình Đại sứ Giáo dục Chip Chip là gì?
-            </p></a
-          >
-          <div class="uk-accordion-content">
-            <p>
-              💡 Chương trình dành cho những ai muốn kiếm thêm thu nhập bằng
-              cách giới thiệu học sinh tham gia khóa học tiếng Anh tại Chip
-              Chip. Bạn chỉ cần giới thiệu, mọi bước còn lại Chip Chip sẽ lo!
-            </p>
+
+              <p class="text-[#065ddf]">
+                Diễn viên Vân Trang, mẹ bé Nì (7 tuổi)
+              </p>
+              <p>
+                Con tiến bộ rõ rệt và tự tin hơn nhờ cách Chip Chip tập trung
+                vào việc chuẩn hoá phát âm và từ vựng, điều này rất quan trọng
+                với trẻ
+              </p>
+            </div>
           </div>
-        </li>
-        <li>
-          <a class="uk-accordion-title" href>
-            <p>
+          <div class="benefit-card">
+            <img
+              class="benefit-card-image"
+              src="public/summers/6.2.png"
+              alt="teacher"
+            />
+            <div class="benefit-card-content">
               <img
-                class="max-md:size-5 max-md:mt-0.5 mr-2 md:mr-3"
-                src="public/icon/7.1.svg"
-                alt="line"
+                class="benefit-card-content-arrow"
+                src="public/summers/icons/arrow.svg"
+                alt="teacher"
               />
-              2. Tôi cần điều kiện gì để trở thành Đại sứ?
-            </p></a
-          >
-          <div class="uk-accordion-content">
-            <p>
-              💡 Không yêu cầu kinh nghiệm hay chuyên môn, chỉ cần bạn có mong
-              muốn chia sẻ về chương trình học của Chip Chip đến phụ huynh có
-              con trong độ tuổi phù hợp.
-            </p>
+
+              <p class="text-[#F57032]">
+                Diễn viên Lã Thanh Huyền, mẹ bé Chum (10 tuổi)
+              </p>
+              <p>
+                Con tiến bộ rất nhiều, tự tin và thoải mái hơn giao tiếp với
+                người nước ngoài. Phát âm chuẩn hơn, phản xạ nhanh hơn và diễn
+                đạt ý 1 cách trôi chảy
+              </p>
+            </div>
           </div>
-        </li>
-        <li>
-          <a class="uk-accordion-title" href>
-            <p>
+          <div class="benefit-card">
+            <img
+              class="benefit-card-image"
+              src="public/summers/6.3.png"
+              alt="teacher"
+            />
+            <div class="benefit-card-content">
               <img
-                class="max-md:size-5 max-md:mt-0.5 mr-2 md:mr-3"
-                src="public/icon/7.1.svg"
-                alt="line"
-              />3. Làm sao để giới thiệu học sinh?
-            </p></a
-          >
-          <div class="uk-accordion-content">
-            <p>
-              💡 Bạn sẽ nhận được một link đăng ký cá nhân. Chỉ cần chia sẻ link
-              này đến phụ huynh, nếu họ đăng ký học thành công, bạn sẽ nhận hoa
-              hồng.
-            </p>
+                class="benefit-card-content-arrow"
+                src="public/summers/icons/arrow.svg"
+                alt="teacher"
+              />
+
+              <p class="text-[#760FC5]">Anh Nam, ba bé Nam Châu (5 tuổi)</p>
+              <p>
+                Trò chơi tương tác rất thú vị, con hào hứng và yêu thích việc
+                học một cách tự nhiên và ghi nhớ được siêu nhiều từ vựng.
+              </p>
+            </div>
           </div>
-        </li>
-        <li>
-          <a class="uk-accordion-title" href>
-            <p>
+          <div class="benefit-card">
+            <img
+              class="benefit-card-image"
+              src="public/summers/6.4.png"
+              alt="teacher"
+            />
+            <div class="benefit-card-content">
               <img
-                class="max-md:size-5 max-md:mt-0.5 mr-2 md:mr-3"
-                src="public/icon/7.1.svg"
-                alt="line"
-              />4. Hoa hồng được tính như thế nào?
-            </p></a
-          >
-          <div class="uk-accordion-content">
-            <p>
-              💡 Mỗi học sinh đăng ký thành công, bạn sẽ nhận được hoa hồng theo
-              chính sách hiện tại của Chip Chip. Ngoài ra, còn có các mức thưởng
-              khi đạt số lượng học sinh nhất định.
-            </p>
+                class="benefit-card-content-arrow"
+                src="public/summers/icons/arrow.svg"
+                alt="teacher"
+              />
+
+              <p class="text-[#0BB45D]">
+                Mẹ Tít Kỷ luật tích cực, mẹ bé Tít (4 tuổi)
+              </p>
+              <p>
+                Giáo viên bản ngữ thì rất nhiệt tình, vui vẻ, phương pháp học
+                tập khiến con rất hứng thú trước mỗi buổi học.
+              </p>
+            </div>
           </div>
-        </li>
-        <li>
-          <a class="uk-accordion-title" href>
-            <p>
-              <img
-                class="max-md:size-5 max-md:mt-0.5 mr-2 md:mr-3"
-                src="public/icon/7.1.svg"
-                alt="line"
-              />5. Khi nào tôi nhận được hoa hồng?
-            </p></a
-          >
-          <div class="uk-accordion-content">
-            <p>💡 Hoa hồng sẽ được thanh toán vào ngày mùng 7 hàng tháng.</p>
-          </div>
-        </li>
-        <li>
-          <a class="uk-accordion-title" href>
-            <p>
-              <img
-                class="max-md:size-5 max-md:mt-0.5 mr-2 md:mr-3"
-                src="public/icon/7.1.svg"
-                alt="line"
-              />6. Tôi có cần tư vấn hay chốt đơn không?
-            </p></a
-          >
-          <div class="uk-accordion-content">
-            <p>
-              💡 Không. Bạn chỉ cần giới thiệu học sinh, đội ngũ Chip Chip sẽ tư
-              vấn và chốt đơn.
-            </p>
-          </div>
-        </li>
-        <li>
-          <a class="uk-accordion-title" href>
-            <p>
-              <img
-                class="max-md:size-5 max-md:mt-0.5 mr-2 md:mr-3"
-                src="public/icon/7.1.svg"
-                alt="line"
-              />7. Tôi có thể theo dõi số lượng học sinh giới thiệu ở đâu?
-            </p></a
-          >
-          <div class="uk-accordion-content">
-            <p>
-              💡 Bạn tải app Đại sứ giáo dục Chip Chip để theo dõi số lượng học
-              sinh đã đăng ký và tình trạng hoa hồng.
-            </p>
-          </div>
-        </li>
-        <li>
-          <a class="uk-accordion-title" href>
-            <p>
-              <img
-                class="max-md:size-5 max-md:mt-0.5 mr-2 md:mr-3"
-                src="public/icon/7.1.svg"
-                alt="line"
-              />8. Chip Chip có hỗ trợ Đại sứ không?
-            </p></a
-          >
-          <div class="uk-accordion-content">
-            <p>
-              💡 Có! Chip Chip cung cấp tài liệu, hình ảnh, video hỗ trợ và luôn
-              sẵn sàng giải đáp thắc mắc để bạn hoạt động hiệu quả hơn.
-            </p>
-          </div>
-        </li>
-        <li>
-          <a class="uk-accordion-title" href>
-            <p>
-              <img
-                class="max-md:size-5 max-md:mt-0.5 mr-2 md:mr-3"
-                src="public/icon/7.1.svg"
-                alt="line"
-              />9. Tôi có thể tham gia nếu không có nhiều người quen có con nhỏ
-              không?
-            </p></a
-          >
-          <div class="uk-accordion-content">
-            <p>
-              💡 Hoàn toàn được! Bạn có thể giới thiệu thông qua mạng xã hội,
-              các hội nhóm hoặc tận dụng tài liệu hỗ trợ từ Chip Chip để tiếp
-              cận nhiều phụ huynh hơn.
-            </p>
-          </div>
-        </li>
-        <li>
-          <a class="uk-accordion-title" href>
-            <p>
-              <img
-                class="max-md:size-5 max-md:mt-0.5 mr-2 md:mr-3"
-                src="public/icon/7.1.svg"
-                alt="line"
-              />10. Tôi có thể vừa làm Đại sứ vừa làm công việc khác không?
-            </p></a
-          >
-          <div class="uk-accordion-content">
-            <p>
-              💡 Có! Chương trình Đại sứ Giáo dục không ràng buộc thời gian, bạn
-              có thể làm bất cứ lúc nào, ngay cả khi đang đi làm hoặc chăm sóc
-              gia đình.
-            </p>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
 
     <!-- Đăng ký  -->
-    <div id="form-register" class="register-wrapper uk-position-relative">
+    <div id="form-register" class="register-wrapper">
+      <div class="container">
+        <div class="flex justify-center -mb-18 md:-mb-16 relative">
+          <img
+            src="/public/summers/7.6.png"
+            class="max-md:!hidden"
+            alt="register"
+            class=""
+          />
+          <img
+            src="/public/summers/7.6.1.png"
+            class="md:!hidden"
+            alt="register"
+            class=""
+          />
+        </div>
+        <div class="register grid grid-cols-2">
+          <div class="register-content max-sm:!pt-25">
+            <form class="text-left register-form">
+              <div class="register-form-field-wrapper">
+                <label for="name" class="register-form-label">Họ tên con</label>
+                <input
+                  class="uk-input register-form-input"
+                  type="text"
+                  placeholder="Vui lòng nhập họ tên con"
+                  aria-label="Input"
+                  name="name"
+                  id="name"
+                />
+              </div>
+              <!-- <div class="register-form-field-wrapper">
+                <label for="name" class="register-form-label">Năm sinh</label>
+                <div
+                  uk-form-custom="target: > * > span:first-child"
+                  class="w-full"
+                >
+                  <select aria-label="Custom controls">
+                    <option value="">Chọn năm sinh</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2019">2020</option>
+                    <option value="2019">2021</option>
+                  </select>
+                  <button
+                    class="register-form-select"
+                    type="button"
+                    tabindex="-1"
+                  >
+                    <span class="uk-margin-remove"></span>
+                    <span uk-icon="icon: chevron-down"></span>
+                  </button>
+                </div>
+              </div> -->
+              <div class="register-form-field-wrapper">
+                <label for="name" class="register-form-label">Năm sinh</label>
+                <input
+                  class="uk-input register-form-input"
+                  type="text"
+                  placeholder="Vui lòng nhập năm sinh của con"
+                  aria-label="Input"
+                  name="birthday"
+                  id="birthday"
+                />
+              </div>
+              <div class="register-form-field-wrapper">
+                <label for="name" class="register-form-label"
+                  >Số điện thoại</label
+                >
+                <input
+                  class="uk-input register-form-input"
+                  type="text"
+                  placeholder="Vui lòng nhập số điện thoại của ba mẹ"
+                  aria-label="Input"
+                  name="name"
+                  id="name"
+                />
+              </div>
+              <button
+                class="bg-[#FFA218] py-6 rounded-2xl flex justify-center items-center text-lg text-white font-bold"
+              >
+                Gửi thông tin đăng ký
+              </button>
+            </form>
+          </div>
+          <div class="register-content-right">
+            <div class="flex justify-center">
+              <div class="countdown-wrapper">
+                <img src="public/summers/7.3.png" alt="register" />
+                <div class="countdown">
+                  <div class="time-box">
+                    <div class="time-number" id="days">00</div>
+                    <div class="time-label">ngày</div>
+                  </div>
+                  <div class="time-box">
+                    <div class="time-number" id="hours">00</div>
+                    <div class="time-label">giờ</div>
+                  </div>
+                  <div class="time-box">
+                    <div class="time-number" id="minutes">00</div>
+                    <div class="time-label">phút</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img
+              src="public/summers/7.4.png"
+              alt="register"
+              class="register-img w-full mt-5"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="justify-center flex mt-14 mb-[111px] md:mt-[113px] md:mb-[129px]"
+      >
+        <img src="public/summers/7.1.png" alt="register" class="" />
+      </div>
+    </div>
+
+    <div class="text-[#57595C] container my-6">
+      <p class="text-lg">LIÊN HỆ CHIP CHIP</p>
+      <div
+        class="grid gap-4 md:grid-cols-3 mt-3 pb-4 mb-4 border-b border-[#C2C2C2]"
+      >
+        <div class="flex items-center gap-3">
+          <img class="" src="public/summers/icons/call.svg" alt="teacher" />
+          <p class="">0965 901 801</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <img class="" src="public/summers/icons/global.svg" alt="teacher" />
+          <p class="">chipchip.edu.vn</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <img class="" src="public/summers/icons/fb.svg" alt="teacher" />
+          <p class="">facebook.com/chipchip.tienganh</p>
+        </div>
+      </div>
+      <div class="text-[#272B30]">
+        Văn phòng: Tầng 5, Nhà D - Khách sạn Thể Thao, 15 Lê Văn Thiêm, Thanh
+        Xuân, Hà Nội
+      </div>
+    </div>
+
+    <!-- Đăng ký  -->
+    <!-- <div id="form-register" class="register-wrapper uk-position-relative">
       <div class="uk-child-width-1-2 uk-flex uk-flex-center">
         <div class="register container">
           <div class="register-content exeption">
@@ -760,7 +710,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Modal register -->
     <div id="modal-center" class="uk-flex-top modal-center" uk-modal>
@@ -863,6 +813,42 @@
       setTimeout(() => {
         UIkit.modal("#modal-center").show();
       }, 30000);
+
+      const targetDateStr = "2025-05-21 18:30:00"; // bạn có thể thay đổi giá trị này
+      const deadline = new Date(targetDateStr);
+
+      function updateCountdown(target) {
+        const now = new Date();
+        const diff = target - now;
+
+        if (diff <= 0) {
+          document.getElementById("days").innerText = "00";
+          document.getElementById("hours").innerText = "00";
+          document.getElementById("minutes").innerText = "00";
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+
+        document.getElementById("days").innerText = String(days).padStart(
+          2,
+          "0"
+        );
+        document.getElementById("hours").innerText = String(hours).padStart(
+          2,
+          "0"
+        );
+        document.getElementById("minutes").innerText = String(minutes).padStart(
+          2,
+          "0"
+        );
+      }
+
+      // Khởi chạy lần đầu và sau mỗi phút
+      updateCountdown(deadline);
+      setInterval(() => updateCountdown(deadline), 60000);
     </script>
     <script src="/main.js"></script>
   </body>

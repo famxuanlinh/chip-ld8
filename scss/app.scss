@@ -1,15 +1,14 @@
-@use "chip-chip";
 @use "common";
 @use "hero";
 @use "mixin" as *;
 @use "register";
 @use "reset";
 @use "advisory";
-@use "income";
 @use "about-us";
 @use "candidate";
-@use "faq";
 @use "benefit";
+@use "discount";
+@use "result";
 
 @font-face {
   font-family: "SF Pro Rounded";
@@ -145,7 +144,7 @@ ul {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 24px;
@@ -175,56 +174,56 @@ ul {
   }
 }
 
-.button-primary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 52px;
-  gap: 4px;
-  width: fit-content;
-  height: 72px;
-  color: white;
-  background: #4ab749;
-  border-radius: 1000px;
-  cursor: pointer;
-  font-size: 20px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  text-decoration: none;
-  animation: crescendo 1s alternate infinite ease-in;
+// .button-primary {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 0px 52px;
+//   gap: 4px;
+//   width: fit-content;
+//   height: 72px;
+//   color: white;
+//   background: #4ab749;
+//   border-radius: 1000px;
+//   cursor: pointer;
+//   font-size: 20px;
+//   flex: none;
+//   order: 1;
+//   flex-grow: 0;
+//   text-decoration: none;
+//   animation: crescendo 1s alternate infinite ease-in;
 
-  @include maxw(768) {
-    font-size: 16px;
-  }
+//   @include maxw(768) {
+//     font-size: 16px;
+//   }
 
-  &-big {
-    height: 86px;
-    padding: 0 61px;
-    font-size: 23.82px;
-    font-weight: 700;
-    line-height: 34.54px;
+//   &-big {
+//     height: 86px;
+//     padding: 0 61px;
+//     font-size: 23.82px;
+//     font-weight: 700;
+//     line-height: 34.54px;
 
-    @include maxw(768) {
-      height: 52px;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 23.2px;
-      color: #ffffff;
-    }
-  }
+//     @include maxw(768) {
+//       height: 52px;
+//       font-size: 16px;
+//       font-weight: 700;
+//       line-height: 23.2px;
+//       color: #ffffff;
+//     }
+//   }
 
-  &:hover {
-    color: #c8f2ff;
-    text-decoration: none;
-  }
+//   &:hover {
+//     color: #c8f2ff;
+//     text-decoration: none;
+//   }
 
-  @include max-md {
-    // padding: 10px 20px;
-    height: 52px;
-    width: 100%;
-  }
-}
+//   @include max-md {
+//     // padding: 10px 20px;
+//     height: 52px;
+//     width: 100%;
+//   }
+// }
 
 @keyframes crescendo {
   /*   0%   {transform: scale(.8);} */
@@ -292,5 +291,50 @@ ul {
 .uk-child-width-1-1-5 > * {
   @include maxw(640) {
     width: 75%;
+  }
+}
+
+.button-primary {
+  height: 60px;
+  border-radius: 20px;
+  box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.1) inset,
+    0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  color: var(--Neutral-N1, #fff);
+  text-align: center;
+  border-radius: 40px;
+  background: var(--Primary-P1, #4ab749);
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+  letter-spacing: 0.72px;
+
+  &:hover {
+    text-decoration: none;
+    color: var(--Neutral-N1, #fff);
+  }
+}
+
+.btn-animation {
+  // transition-duration: 0.4s;
+  position: relative;
+
+  &:hover {
+    opacity: 0.95;
+  }
+
+  &:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 0s;
+  }
+
+  &:active {
+    top: 2px;
+    box-shadow: none;
   }
 }

@@ -3,14 +3,16 @@
 
 .about {
   &-proud {
-    background: #f4fcf3;
+    background-image: url(/public/summers/2-bg.png);
     position: relative;
+    background-size: cover;
     width: 100%;
     overflow: hidden;
-    padding: 80px 0 86px 0;
+    padding: 65px 0 177px 0;
+    background-position: bottom;
 
     @include maxw(780) {
-      padding: 50px 0;
+      padding: 52px 0 89px 0;
     }
 
     &-footer {
@@ -42,41 +44,40 @@
       }
     }
     &-title {
-      color: #4ab749;
+      color: #ce4d10;
       text-align: center;
-      font-size: 54px;
+      font-family: "SF Pro Rounded";
+      font-size: 40px;
       font-style: normal;
-      font-weight: 700;
-      margin-bottom: 40px;
-      line-height: 100%;
+      font-weight: 800;
+      line-height: 64px; /* 160% */
+      margin-bottom: 32px;
 
       @include maxw(780) {
-        color: #4ab749;
+        color: #ce4d10;
         text-align: center;
-        font-size: 30px;
+        font-family: "SF Pro Rounded";
+        font-size: 28px;
         font-style: normal;
-        font-weight: 700;
-        line-height: 100%;
+        font-weight: 800;
+        line-height: 40px; /* 142.857% */
+        margin-bottom: 40px;
       }
     }
 
     &-body {
       @extend .container;
 
-      display: grid;
-      grid-template-columns: auto auto auto;
-      gap: 16px;
-
       @include maxw(780) {
         display: block;
-        gap: 16px;
+        gap: 24px;
       }
 
-      & > :not(:last-child) {
-        @include maxw(780) {
-          margin-bottom: 16px;
-        }
-      }
+      // & > :not(:last-child) {
+      //   @include maxw(780) {
+      //     margin-bottom: 16px;
+      //   }
+      // }
     }
 
     &-card {
@@ -85,58 +86,47 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      padding: 24px;
       color: white;
       display: flex;
       flex-direction: column;
 
       @include maxw(780) {
-        padding: 0px;
         width: 100%;
         max-width: 100%;
       }
 
-      &-icon {
-        max-width: 231px;
+      &-image {
+        aspect-ratio: 339/240;
       }
 
       &-title {
-        color: #ff9914;
-        text-align: center;
-        font-size: 28px;
+        font-size: 32px;
         font-style: normal;
         font-weight: 700;
-        line-height: 36px; /* 128.571% */
-        margin-top: 36px;
-        margin-bottom: 24px;
+        line-height: 48px; /* 150% */
+        margin: 24px 0 8px 0;
 
         @include maxw(1180) {
-          color: #ff9914;
-          text-align: center;
-          font-size: 24px;
+          font-size: 20px;
           font-style: normal;
           font-weight: 700;
-          line-height: normal;
-          margin-top: 24px;
-          margin-bottom: 12px;
+          line-height: 32px; /* 160% */
+          margin: 8px 0;
         }
       }
 
       &-desc {
-        color: #57595c;
-        text-align: center;
         font-size: 18px;
         font-style: normal;
-        font-weight: 500;
-        line-height: 26px; /* 144.444% */
+        font-weight: 600;
+        line-height: 24px; /* 133.333% */
+        color: #57595c;
 
         @include maxw(1180) {
-          color: #57595c;
-          text-align: center;
           font-size: 16px;
           font-style: normal;
-          font-weight: 500;
-          line-height: 26px; /* 162.5% */
+          font-weight: 600;
+          line-height: 24px; /* 150% */
         }
       }
     }
