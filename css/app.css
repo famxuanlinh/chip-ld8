@@ -86,7 +86,6 @@ p {
 }
 .hero-container {
   display: flex;
-  gap: 48px;
 }
 @media screen and (max-width: 768px) {
   .hero-container {

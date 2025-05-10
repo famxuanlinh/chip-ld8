@@ -13,7 +13,6 @@
   }
   &-container {
     display: flex;
-    gap: 48px;
 
     @include maxw(768) {
       flex-direction: column;
