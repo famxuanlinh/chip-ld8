@@ -258,3 +258,249 @@
     line-height: 20.25px; /* 150% */
   }
 }
+
+.register1 {
+  z-index: 1;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+
+  @include max-lg {
+    flex-direction: column-reverse;
+  }
+
+  &-wrapper {
+    z-index: 9;
+    padding: 80px 0 0 0;
+    background: linear-gradient(180deg, #54c033 0%, #72e350 100%);
+
+    @include maxw(768) {
+      padding: 24px 0 0 0;
+    }
+  }
+
+  &-modal {
+    background: linear-gradient(180deg, #54c033 0%, #72e350 100%);
+    max-width: 736px;
+    width: 100%;
+    border-radius: 24px;
+  }
+
+  &-background {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    opacity: 0.1;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    z-index: -1;
+    background: #0aa807;
+  }
+
+  &-content {
+    max-width: 540px;
+    width: 100%;
+    flex: 1 1 0%;
+    flex: none;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include md {
+      width: 100%;
+      padding: 48px;
+    }
+    @include max-md {
+      width: 100%;
+      padding: 20px;
+    }
+
+    &.exeption {
+      margin-bottom: 80px;
+    }
+  }
+
+  &-title {
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    line-height: 64px; /* 160% */
+
+    @include maxw(1180) {
+      text-align: center;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px; /* 166.667% */
+    }
+
+    &.modal {
+      margin-bottom: 24px;
+    }
+
+    &-line {
+      position: absolute;
+      bottom: 0px;
+      right: 50px;
+      width: 133px;
+
+      @include maxw(1180) {
+        position: absolute;
+        bottom: 0;
+        left: 62%;
+        width: 105px;
+      }
+
+      &-modal {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        width: 133px;
+
+        @include maxw(1180) {
+          position: absolute;
+          bottom: 0;
+          left: 43%;
+          width: 105px;
+        }
+      }
+    }
+  }
+
+  &-img {
+    flex: 1 1 0%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    flex: none;
+    width: 50%;
+
+    @include max-lg {
+      width: 100%;
+      border-bottom-left-radius: none;
+      border-top-right-radius: 8px;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    &.modal {
+      @include min-lg {
+        margin-left: -30px;
+        margin-bottom: -30px;
+      }
+      @include max-lg {
+        display: none;
+      }
+    }
+  }
+  &-form {
+    margin-top: 30px;
+
+    @include maxw(768) {
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+    & > :not(:last-child) {
+      margin-bottom: 14px;
+    }
+    & > :last-child {
+      margin-top: 25px !important;
+    }
+    &-select {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      padding: 0 24px;
+      height: 60px;
+      font-size: 16px;
+      justify-content: space-between;
+      background-color: transparent;
+      border: 1px solid rgba(235, 236, 240, 1);
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &-label {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 22px;
+      margin-bottom: 6px;
+      color: #13161a;
+      color: white;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+    &-input {
+      padding: 0 24px;
+      height: 60px;
+      border-radius: 9999px;
+      border: 1px solid rgba(235, 236, 240, 1);
+      ::placeholder {
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+
+  &-try {
+    padding: 30px;
+    padding-top: 180px;
+    background-image: url(/public/modal-img.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include maxw(768) {
+      padding-top: 220px;
+    }
+  }
+
+  &-to-try {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 99;
+    transition-duration: 1s;
+
+    &.hide {
+      display: none;
+      transition-duration: 1s;
+    }
+
+    @include maxw(768) {
+      zoom: 0.75;
+    }
+
+    &-mobile {
+      @include minw(768) {
+        display: none;
+      }
+    }
+
+    &-destop {
+      -webkit-filter: drop-shadow(1px 1px 1px #aaaaaa);
+      filter: drop-shadow(0 0 0.55rem #c6c6c6);
+      @include maxw(768) {
+        display: none;
+        max-height: 100px;
+      }
+      @include minw(960) {
+        max-height: 100px;
+      }
+      @include minw(1280) {
+        max-height: 120px;
+      }
+      @include minw(1650) {
+        max-height: 160px !important;
+      }
+    }
+  }
+}
