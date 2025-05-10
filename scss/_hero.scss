@@ -6,12 +6,10 @@
   background-size: cover;
   width: 100%;
   overflow: hidden;
-  margin-top: -80px;
 
   @include maxw(768) {
     background-size: cover;
     background-position: bottom;
-    padding-top: 80px;
   }
   &-container {
     display: flex;
@@ -25,9 +23,6 @@
   &-content {
     max-width: 560px;
     width: 100%;
-    @include minw(1180) {
-      padding: 40px 0;
-    }
 
     &-sub-title {
       color: #4ab749;

@@ -60,10 +60,10 @@
     <!-- Main banner -->
     <div class="hero">
       <div class="container">
-        <div class="hero-container mt-8 md:mt-20">
-          <div class="hero-content flex-none">
+        <div class="hero-container">
+          <div class="hero-content !my-6 2xl:!my-16 flex-none">
             <img
-              class="header-logo mb-4 mt-6 md:mt-16 md:mb-8"
+              class="header-logo mb-4 md:mb-8"
               src="/public/logo.svg"
               alt=""
             />
@@ -109,62 +109,66 @@
 
     <!--   3 LÝ DO PHỤ HUYNH TIN CHỌN CHIP CHIP -->
     <div class="about-proud z-1 max-md:-mt-16 -mt-[35px] !pt-25">
-      <div class="about-proud-title">3 LÝ DO PHỤ HUYNH TIN CHỌN CHIP CHIP</div>
-      <div class="about-proud-body grid grid-cols-3 gap-6">
-        <div class="about-proud-card">
-          <img
-            class="about-proud-card-image"
-            src="public/summers/3.1.webp"
-            alt="teacher"
-          />
-
-          <p class="about-proud-card-title text-[#FF9914]">
-            600+ giáo viên nước ngoài hạng A
-          </p>
-          <p class="about-proud-card-desc">
-            100% có chứng chỉ TESOL/CELTA, nhiều năm kinh nghiệm dạy trẻ em 4-12
-            tuổi, tuyển chọn khắt khe qua 6 bước
-          </p>
+      <div class="">
+        <div class="about-proud-title">
+          3 LÝ DO PHỤ HUYNH TIN CHỌN CHIP CHIP
         </div>
-        <div class="about-proud-card">
-          <img
-            class="about-proud-card-image"
-            src="public/summers/3.2.webp"
-            alt="teacher"
-          />
+        <div class="about-proud-body grid grid-cols-3 gap-6">
+          <div class="about-proud-card">
+            <img
+              class="about-proud-card-image"
+              src="public/summers/3.1.webp"
+              alt="teacher"
+            />
 
-          <p class="about-proud-card-title text-[#4AB749]">
-            Học vui hơn với bài giảng tương tác
-          </p>
-          <p class="about-proud-card-desc">
-            Bài giảng được thiết kế dưới dạng trò chơi tương tác đa giác quan
-            giúp kích thích tối đa hào hứng học tập của bé
-          </p>
-        </div>
-        <div class="about-proud-card">
-          <img
-            class="about-proud-card-image"
-            src="public/summers/3.3.webp"
-            alt="teacher"
-          />
+            <p class="about-proud-card-title text-[#FF9914]">
+              600+ giáo viên nước ngoài hạng A
+            </p>
+            <p class="about-proud-card-desc">
+              100% có chứng chỉ TESOL/CELTA, nhiều năm kinh nghiệm dạy trẻ em
+              4-12 tuổi, tuyển chọn khắt khe qua 6 bước
+            </p>
+          </div>
+          <div class="about-proud-card">
+            <img
+              class="about-proud-card-image"
+              src="public/summers/3.2.webp"
+              alt="teacher"
+            />
 
-          <p class="about-proud-card-title text-[#8E59FF]">
-            Thuận tiện theo dõi tiến bộ
-          </p>
-          <p class="about-proud-card-desc">
-            Với app học tập thiết kế độc quyền, phụ huynh dễ dàng nắm bắt tình
-            hình học tập của con mọi lúc, mọi nơi
-          </p>
+            <p class="about-proud-card-title text-[#4AB749]">
+              Học vui hơn với bài giảng tương tác
+            </p>
+            <p class="about-proud-card-desc">
+              Bài giảng được thiết kế dưới dạng trò chơi tương tác đa giác quan
+              giúp kích thích tối đa hào hứng học tập của bé
+            </p>
+          </div>
+          <div class="about-proud-card">
+            <img
+              class="about-proud-card-image"
+              src="public/summers/3.3.webp"
+              alt="teacher"
+            />
+
+            <p class="about-proud-card-title text-[#8E59FF]">
+              Thuận tiện theo dõi tiến bộ
+            </p>
+            <p class="about-proud-card-desc">
+              Với app học tập thiết kế độc quyền, phụ huynh dễ dàng nắm bắt tình
+              hình học tập của con mọi lúc, mọi nơi
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="mt-8 mb-10 flex justify-center">
-        <a
-          href="#modal-center"
-          uk-toggle
-          class="button-primary max-w-[256px] btn-animation w-full flex-center bg-primary-green px-5 grayscale-white button-m"
-        >
-          Đăng ký học thử
-        </a>
+        <div class="mt-8 mb-10 flex justify-center">
+          <a
+            href="#modal-center"
+            uk-toggle
+            class="button-primary max-w-[256px] btn-animation w-full flex-center bg-primary-green px-5 grayscale-white button-m"
+          >
+            Đăng ký học thử
+          </a>
+        </div>
       </div>
     </div>
 
@@ -487,7 +491,7 @@
     <!-- Đăng ký  -->
     <div id="form-register" class="register-wrapper">
       <div class="container">
-        <div class="flex justify-center -mb-18 md:-mb-16 relative">
+        <div class="flex justify-center -mb-18 md:-mb-16 relative z-10">
           <img
             src="/public/summers/7.6.png"
             class="max-md:!hidden"
@@ -502,7 +506,7 @@
           />
         </div>
         <div class="register grid grid-cols-2">
-          <div class="register-content max-sm:!pt-25">
+          <div class="register-content md:!py-24 md:!pb-10 max-md:!pt-25">
             <form class="text-left register-form">
               <div class="register-form-field-wrapper">
                 <label for="name" class="register-form-label">Họ tên con</label>
@@ -577,7 +581,7 @@
               </button>
             </form>
           </div>
-          <div class="register-content-right">
+          <div class="register-content-right flex flex-col justify-between">
             <div class="flex justify-center">
               <div class="countdown-wrapper">
                 <img src="public/summers/7.3.png" alt="register" />
@@ -598,7 +602,7 @@
               </div>
             </div>
             <img
-              src="public/summers/7.4.png"
+              src="public/summers/7.7.png"
               alt="register"
               class="register-img w-full mt-5"
             />
@@ -636,85 +640,6 @@
       </div>
     </div>
 
-    <!-- Đăng ký  -->
-    <!-- <div id="form-register" class="register-wrapper uk-position-relative">
-      <div class="uk-child-width-1-2 uk-flex uk-flex-center">
-        <div class="register container">
-          <div class="register-content exeption">
-            <div class="register-header">
-              <p class="register-sub-title">Đăng ký để trở thành</p>
-              <p class="register-title">Đại sứ giáo dục</p>
-            </div>
-            <form class="text-left register-form">
-              <div class="register-form-title">
-                <span>Chỉ còn</span>
-                <div class="flex items-center gap-2 mx-5">
-                  <p class="num">4</p>
-                  <p class="num">5</p>
-                </div>
-                <span>suất</span>
-              </div>
-              <div>
-                <input
-                  class="uk-input register-form-input"
-                  type="text"
-                  placeholder="Họ và tên"
-                  aria-label="Input"
-                  name="name"
-                />
-              </div>
-              <div>
-                <input
-                  class="uk-input register-form-input"
-                  type="text"
-                  placeholder="Số điện thoại"
-                  aria-label="Input"
-                  name="phone"
-                />
-              </div>
-              <div>
-                <input
-                  class="uk-input register-form-input"
-                  type="text"
-                  placeholder="Email"
-                  aria-label="Input"
-                  name="mail"
-                />
-              </div>
-
-              <div>
-                <input
-                  class="uk-input register-form-input"
-                  type="text"
-                  placeholder="Mật khẩu"
-                  aria-label="Input"
-                  name="password"
-                />
-              </div>
-              <div
-                class="uk-flex uk-flex-center"
-                style="margin-top: 12px; height: 60px"
-              >
-                <button
-                  class="button-primary"
-                  style="height: 100%; width: 100%; border-color: transparent"
-                >
-                  Đăng ký ngay
-                </button>
-              </div>
-            </form>
-          </div>
-          <div class="flex items-end h-full w-full justify-end">
-            <img
-              src="public/candidates/8.webp"
-              alt="register"
-              class="register-img"
-            />
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <!-- Modal register -->
     <div id="modal-center" class="uk-flex-top" uk-modal>
       <div
@@ -724,9 +649,9 @@
         <div class="flex w-full">
           <div class="register1-title modal">
             <div style="position: relative; text-align: left">
-              Tặng suất học trải <br class="md:hidden" />
-              nghiệm và đánh giá <br class="md:hidden" />
-              trình độ miễn phí
+              TẶNG SUẤT HỌC THỬ <br class="md:hidden" />
+              MIỄN PHÍ VÀ BỘ QUÀ TẶNG <br class="md:hidden" />
+              HÈ SIÊU HẤP DẪN
               <img
                 class="register1-title-line-modal"
                 src="public/c2-line-orange.svg"
@@ -744,9 +669,9 @@
 
         <div class="register1">
           <img
-            src="public/c10-img.png"
+            src="public/summers/7.7.png"
             alt="register1"
-            class="register1-img modal"
+            class="register1-img modal scale-125 !max-w-[560px]"
           />
           <div class="register1-content" style="padding: 0">
             <form class="text-left register1-form">

@@ -264,6 +264,7 @@
   border-radius: 8px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   padding: 0;
 
@@ -327,7 +328,7 @@
   &-title {
     color: #fff;
     text-align: center;
-    font-size: 36px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     display: flex;
@@ -368,7 +369,7 @@
         @include maxw(1180) {
           position: absolute;
           bottom: 0;
-          left: 43%;
+          left: 32%;
           width: 105px;
         }
       }

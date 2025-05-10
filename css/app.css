@@ -77,13 +77,11 @@ p {
   background-size: cover;
   width: 100%;
   overflow: hidden;
-  margin-top: -80px;
 }
 @media screen and (max-width: 768px) {
   .hero {
     background-size: cover;
     background-position: bottom;
-    padding-top: 80px;
   }
 }
 .hero-container {
@@ -99,11 +97,6 @@ p {
 .hero-content {
   max-width: 560px;
   width: 100%;
-}
-@media screen and (min-width: 1180px) {
-  .hero-content {
-    padding: 40px 0;
-  }
 }
 .hero-content-sub-title {
   color: #4ab749;
@@ -432,6 +425,7 @@ p {
   border-radius: 8px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   padding: 0;
 }
@@ -496,7 +490,7 @@ p {
 .register1-title {
   color: #fff;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   display: flex;
@@ -539,7 +533,7 @@ p {
   .register1-title-line-modal {
     position: absolute;
     bottom: 0;
-    left: 43%;
+    left: 32%;
     width: 105px;
   }
 }
