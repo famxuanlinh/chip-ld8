@@ -608,7 +608,7 @@ p {
 .register1-try {
   padding: 30px;
   padding-top: 180px;
-  background-image: url(/public/modal-img.webp);
+  background-image: url(/public/summers/popup.png);
   background-size: contain;
   background-repeat: no-repeat;
 }

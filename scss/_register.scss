@@ -197,9 +197,6 @@
   }
 }
 
-.time-box {
-}
-
 .time-number {
   color: var(--Primary-P5, #ffa218);
   text-align: center;
@@ -450,7 +447,7 @@
   &-try {
     padding: 30px;
     padding-top: 180px;
-    background-image: url(/public/modal-img.webp);
+    background-image: url(/public/summers/popup.png);
     background-size: contain;
     background-repeat: no-repeat;
     @include maxw(768) {
