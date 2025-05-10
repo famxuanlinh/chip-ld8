@@ -182,7 +182,8 @@ p {
 }
 @media screen and (max-width: 1080px) {
   .register {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 .register-wrapper {
@@ -222,9 +223,9 @@ p {
 @media screen and (max-width: 768px) {
   .register-content-right {
     padding-top: 16px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 24px;
-    border-bottom-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 24px;
   }
 }
 .register-img {
@@ -241,9 +242,9 @@ p {
 }
 @media screen and (max-width: 768px) {
   .register-img {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 24px;
-    border-bottom-left-radius: 24px;
+    border-top-right-radius: 24;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 24px;
   }
 }
 .register-title {

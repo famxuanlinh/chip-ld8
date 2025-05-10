@@ -8,7 +8,8 @@
   width: 100%;
 
   @include maxw(1080) {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   &-wrapper {
@@ -45,9 +46,9 @@
 
       @include maxw(768) {
         padding-top: 16px;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 24px;
-        border-bottom-left-radius: 24px;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 24px;
       }
     }
   }
@@ -64,9 +65,9 @@
     }
 
     @include maxw(768) {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 24px;
-      border-bottom-left-radius: 24px;
+      border-top-right-radius: 24;
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 24px;
     }
   }
 
