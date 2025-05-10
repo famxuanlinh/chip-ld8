@@ -867,7 +867,8 @@ img {
 }
 @media screen and (max-width: 780px) {
   .about-proud-body {
-    display: block;
+    display: flex;
+    flex-direction: column;
     gap: 24px;
   }
 }

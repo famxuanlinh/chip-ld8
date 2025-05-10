@@ -69,7 +69,8 @@
       @extend .container;
 
       @include maxw(780) {
-        display: block;
+        display: flex;
+        flex-direction: column;
         gap: 24px;
       }
 
